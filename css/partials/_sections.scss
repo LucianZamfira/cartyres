@@ -42,8 +42,12 @@ section {
 		padding-right: 1rem;
 
 		.container {
-			position: relative;
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			min-height: 28vh;
 			padding: 4rem 2rem;
+			position: relative;
 		}
 	}
 
@@ -386,6 +390,20 @@ section {
 
 // Mobiles
 @media (max-width: 575px) {
+	.section {
+		&--testimonial {
+			aside {
+				p {
+					font-size: 1.125em;
+				}
+
+				&:after {
+					left: 0;
+				}
+			}
+		}
+	}
+
 	.columns {
 		&-two {
 			columns: auto 1;

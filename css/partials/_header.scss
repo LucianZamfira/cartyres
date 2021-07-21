@@ -81,6 +81,8 @@ header {
 		display: flex;
 		width: 100%;
 		justify-content: flex-end;
+		overflow: hidden;
+		transform: translateX(1.2rem);
 	}
 
 	nav {
@@ -712,6 +714,18 @@ header {
 			}
 		}
 	} */
+	header {
+		.logo {
+			.image {
+				height: 32px;
+			}
+
+			&-slogan {
+				max-width: 260px;
+				font-size: 0.9em;
+			}
+		}
+	}
 
 	.menu {
 		&-aside {

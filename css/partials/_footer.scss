@@ -93,6 +93,10 @@ footer {
 	.footer {
 		&-top {
 			margin-top: 3rem;
+
+			.col-md-12 {
+				margin-bottom: 1.5rem;
+			}
 		}
 	}
 }
@@ -107,6 +111,12 @@ footer {
 		&-top {
 			margin-top: 3rem;
 			margin-bottom: 2.2rem;
+		}
+
+		&-bottom {
+			justify-content: center;
+			padding-bottom: 3rem;
+			padding-right: 0;
 		}
 
 		&-logo {

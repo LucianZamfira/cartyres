@@ -56,10 +56,11 @@
 		display: block;
 	}
 
-	.owl-item .image {
-		height: auto;
-		width: 100%;
-	}
+	// .owl-item .image {
+	// 	height: auto;
+	// 	max-width: 100%;
+	// 	width: 100%;
+	// }
 
 	.owl-nav,
 	.owl-dots {
@@ -134,17 +135,17 @@
 		border: none;
 		color: inherit;
 		font: inherit;
-		height: 15px;
-		margin: 0.5rem;
+		height: 12px;
+		margin: 0.3rem;
 		outline: none;
 		padding: 0;
 		pointer-events: all;
 		transition: all 0.2s ease-in-out;
-		width: 15px;
+		width: 12px;
 
 		&.active {
 			background-color: rgba($primary-color, 0.8);
-			width: 40px;
+			width: 20px;
 		}
 	}
 

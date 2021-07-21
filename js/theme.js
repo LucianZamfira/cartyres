@@ -106,7 +106,30 @@ $(document).ready(function () {
 		headerHeight = $('header').outerHeight();
 	};
 
-	window.onscroll = function () {
+	// onScroll callback
+	// function onScroll(event) {
+	// 	var scroll = window.pageYOffset;
+
+	// 	if (window.innerWidth >= 320) {
+	// 		if (scroll < headerHeight) {
+	// 			$('body').removeAttr('style');
+	// 			$('header').attr('class', 'sticky-no');
+	// 		} else {
+	// 			$('body').css('padding-top', headerHeight);
+	// 			$('header').attr('class', 'sticky-yes');
+	// 		}
+	// 	}
+
+	// 	if (scroll < 100) {
+	// 		$('.scroll-top').removeClass('show');
+	// 	} else {
+	// 		$('.scroll-top').addClass('show');
+	// 	}
+
+	// 	console.log(event, scroll);
+	// }
+
+	window.onscroll = function (event) {
 		var scroll = window.pageYOffset;
 
 		if (window.innerWidth >= 320) {
@@ -124,7 +147,12 @@ $(document).ready(function () {
 		} else {
 			$('.scroll-top').addClass('show');
 		}
+
+		console.log(event, scroll);
 	};
+
+	// document.addEventListener('scroll', onScroll);
+	// document.addEventListener('touchmove', onScroll);
 	// Sticky menu end
 
 	// Init burger menu action
