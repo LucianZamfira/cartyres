@@ -108,6 +108,12 @@ section {
 		padding-bottom: 0;
 		position: relative;
 
+		h1 {
+			color: $white;
+			font-size: 3.625em;
+			text-align: center;
+		}
+
 		&.emphasis {
 			.container {
 				min-height: 40vh;
