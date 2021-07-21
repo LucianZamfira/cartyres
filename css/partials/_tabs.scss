@@ -1,0 +1,140 @@
+.nav {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin-bottom: 0;
+	padding-left: 0;
+
+	&-tabs {
+		font-size: 1.1875em;
+
+		.nav {
+			&-item {
+				margin: 0;
+				flex: 1;
+
+				button {
+					background-color: rgba($primary-color, 0.6);
+					border-color: rgba($primary-color, 0.6);
+					border-bottom: none;
+					border-radius: unset;
+					color: $white;
+					font-size: 1.125em;
+					padding: 1.6rem;
+					width: 100%;
+
+					i {
+						font-size: 42px;
+					}
+
+					&.active {
+						background-color: $white;
+						border-color: $primary-color;
+						color: $primary-color;
+					}
+				}
+
+				&:first-child {
+					button {
+						border-top-left-radius: $border-radius;
+					}
+				}
+
+				&:last-child {
+					button {
+						border-top-right-radius: $border-radius;
+					}
+				}
+			}
+		}
+	}
+}
+
+.tab {
+	&s {
+		&--widget {
+			display: flex;
+			margin-bottom: 1rem;
+			font-size: 1.2em;
+
+			> li {
+				flex: 1;
+				margin: 0;
+				border-bottom: 1px solid #5d5d5d;
+
+				button {
+					border: medium none;
+					border-radius: unset;
+					padding-left: 0;
+					justify-content: flex-start;
+					transform: translateY(1px);
+					font-weight: 500;
+					width: 100%;
+
+					&:hover {
+						background-color: transparent;
+						color: $secondary-color;
+					}
+
+					&.active {
+						border-bottom: 2px solid $secondary-color;
+					}
+				}
+			}
+		}
+
+		&-content {
+			border: 1px solid $primary-color;
+			border-radius: 0 0 $border-radius $border-radius;
+			text-align: initial;
+			padding: 1.2rem;
+
+			&.unstyled {
+				border-radius: unset;
+				border: medium none;
+				padding: 0;
+			}
+
+			> .tab-pane {
+				display: none;
+			}
+
+			> .active {
+				display: block;
+			}
+		}
+	}
+}
+
+.fade {
+	transition: opacity 0.15s linear;
+
+	&:not(.show) {
+		opacity: 0;
+	}
+}
+
+// Mobiles/Tablets
+@media (max-width: 767px) {
+	.nav {
+		&-tabs {
+			flex-direction: column;
+
+			.nav {
+				&-item {
+					&:first-child {
+						button {
+							border-top-right-radius: $border-radius;
+						}
+					}
+
+					&:last-child {
+						button {
+							border-top-right-radius: unset;
+						}
+					}
+				}
+			}
+		}
+	}
+}

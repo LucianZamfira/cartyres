@@ -1,0 +1,116 @@
+footer {
+	background-color: $footer-background-color;
+	color: $white;
+	position: relative;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: inherit;
+	}
+
+	h3 {
+		font-weight: 700;
+		font-size: 1.125em;
+	}
+
+	p {
+		font-size: 1em;
+	}
+
+	a {
+		color: rgba($white, 0.7);
+		text-decoration: none;
+
+		&:hover {
+			color: rgba($white, 1);
+			text-decoration: underline;
+		}
+	}
+}
+
+.footer {
+	&-top {
+		margin-top: $footer-paddings;
+		margin-bottom: 3rem;
+		position: relative;
+
+		li {
+			margin-bottom: 0.4rem;
+		}
+	}
+
+	&-bottom {
+		align-items: center;
+		border-top: 1px solid $sky;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		padding: 2rem 0;
+
+		p {
+			margin: 0;
+		}
+	}
+
+	&-copyright {
+		font-size: 1em;
+		text-align: center;
+
+		i {
+			transform: translateY(-2px);
+		}
+	}
+
+	&-logo {
+		display: inline-flex;
+
+		&:hover {
+			text-decoration: none;
+		}
+
+		img {
+			height: 25px;
+			width: auto;
+		}
+	}
+}
+
+// Tablets/Laptops
+@media (max-width: 1500px) {
+	.footer {
+		&-bottom {
+			padding-right: 5rem;
+		}
+	}
+}
+
+// Tablets/Laptops
+@media (max-width: 991px) {
+	.footer {
+		&-top {
+			margin-top: 3rem;
+		}
+	}
+}
+
+// Tablets
+@media (max-width: 767px) {
+}
+
+// Mobiles
+@media (max-width: 567px) {
+	.footer {
+		&-top {
+			margin-top: 3rem;
+			margin-bottom: 2.2rem;
+		}
+
+		&-logo {
+			margin-bottom: 1.5rem;
+		}
+	}
+}

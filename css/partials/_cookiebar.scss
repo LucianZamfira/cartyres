@@ -1,0 +1,46 @@
+.cookiebar {
+	background-color: $cookiebar-background-color;
+	bottom: 0;
+	color: $cookiebar-color;
+	font-size: $cookiebar-font-size;
+	left: 0;
+	opacity: 0;
+	padding: $cookiebar-paddings;
+	position: fixed;
+	right: 0;
+	transform: translateY(100%);
+	transition: all 0.25s ease-in-out;
+	z-index: -1;
+
+	&.active {
+		opacity: 1;
+		transform: translateY(0);
+		z-index: 9999;
+	}
+
+	&__content {
+		flex: 1 0;
+		margin: 0 auto;
+		max-width: $cookiebar-max-width;
+		text-align: center;
+
+		p {
+			max-width: 80%;
+			margin: 0 auto 1.5rem;
+
+			a {
+				text-decoration: underline;
+
+				&:hover {
+					color: rgba($white, 0.6);
+				}
+			}
+		}
+
+		.button {
+			margin: 0 0.4rem;
+			padding-left: 2rem;
+			padding-right: 2rem;
+		}
+	}
+}

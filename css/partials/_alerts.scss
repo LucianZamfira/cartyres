@@ -1,0 +1,42 @@
+.alert {
+	background-color: $alert-primary-color;
+	border-radius: $alert-border-radius;
+	padding: $alert-paddings;
+	color: $white;
+
+	&-primary {
+		background-color: $alert-primary-color;
+	}
+
+	&-secondary {
+		background-color: $alert-secondary-color;
+	}
+
+	&-danger {
+		background-color: $alert-danger-color;
+	}
+
+	&-success {
+		background-color: $alert-success-color;
+	}
+
+	&-warning {
+		background-color: $alert-warning-color;
+	}
+
+	&-info {
+		background-color: $alert-info-color;
+	}
+
+	&-light {
+		background-color: $alert-light-color;
+	}
+
+	&-dark {
+		background-color: $alert-dark-color;
+	}
+
+	&-gray {
+		background-color: $alert-gray-color;
+	}
+}

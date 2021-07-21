@@ -1,0 +1,40 @@
+// Import variables first
+@import "partials/variables";
+
+// Import partials
+@import "partials/structure";
+@import "partials/alerts";
+@import "partials/badges";
+@import "partials/blog";
+@import "partials/breadcrumbs";
+@import "partials/cards";
+@import "partials/carousels";
+@import "partials/cookiebar";
+@import "partials/footer";
+@import "partials/forms";
+@import "partials/grid";
+@import "partials/header";
+@import "partials/images";
+@import "partials/links";
+@import "partials/lists";
+@import "partials/loading";
+@import "partials/rating";
+@import "partials/pagination";
+@import "partials/sections";
+@import "partials/socialmedia";
+@import "partials/tables";
+@import "partials/tabs";
+@import "partials/typography";
+
+// Import helpers last
+@import "partials/buttons";
+@import "partials/helpers";
+@import "partials/spacing";
+@import "partials/owlcarousel";
+@import "partials/tooltips";
+@import "partials/toasts";
+@import "partials/modals";
+
+// @import "partials/fancybox";
+// @import "partials/dropdowns";
+// @import "partials/collapses";

@@ -1,0 +1,272 @@
+button {
+	&[disabled="disabled"],
+	&:disabled {
+		cursor: not-allowed;
+		opacity: 0.4;
+		user-select: none;
+	}
+}
+
+button,
+.button {
+	align-items: center;
+	background-color: transparent;
+	border-radius: $button-border-radius;
+	border: 1px solid $primary-color;
+	color: $primary-color;
+	cursor: pointer;
+	display: inline-flex;
+	font: inherit;
+	font-weight: $button-font-weight;
+	justify-content: center;
+	line-height: $button-line-height;
+	padding: $button-padding;
+	position: relative;
+	text-decoration: none;
+	text-transform: inherit;
+	transition: all 0.12s ease-in-out;
+
+	i {
+		&.icon-arrow-right {
+			margin-left: 12px;
+		}
+
+		&.icon-arrow-left {
+			margin-right: 12px;
+		}
+	}
+
+	&:hover {
+		background-color: $primary-color;
+		border-color: $primary-color;
+		color: $white;
+		text-decoration: none;
+	}
+
+	&:focus {
+		outline: medium none;
+	}
+}
+
+.button {
+	text-transform: uppercase;
+
+	&--medium {
+		font-size: 0.95em;
+		padding-top: 14px;
+		padding-bottom: 14px;
+
+		i {
+			font-size: 1.45em;
+		}
+	}
+
+	&--small {
+		font-size: 0.88em;
+		padding-top: 8px;
+		padding-bottom: 8px;
+
+		i {
+			font-size: 1.45em;
+		}
+	}
+
+	&--regular {
+		font-size: 1.125em;
+		min-width: 200px;
+	}
+
+	&--slim {
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+
+	&--full,
+	&--fluid {
+		width: 100%;
+	}
+
+	&--primary {
+		background-color: $primary-button-color;
+		border-color: $primary-button-border-color;
+		color: $white;
+
+		&:hover {
+			background-color: $primary-button-color-hover;
+			border-color: $primary-button-border-color-hover;
+			color: $white;
+		}
+	}
+
+	&--secondary {
+		background-color: $secondary-button-color;
+		border-color: $secondary-button-border-color;
+		color: $black;
+
+		&:hover {
+			background-color: $secondary-button-color-hover;
+			border-color: $secondary-button-border-color-hover;
+		}
+	}
+
+	&--favorite {
+		border-radius: unset;
+		border: medium none;
+		font-size: 1.4em;
+		padding: 0.2rem;
+
+		&:hover,
+		&.active {
+			background-color: transparent;
+			color: $secondary-color;
+		}
+	}
+
+	&--icon {
+		background-color: $primary-button-color;
+		border-color: $primary-button-border-color;
+		align-items: center;
+		color: $white;
+		display: flex;
+		font-size: 24px;
+		line-height: 1;
+		padding-bottom: 0.4rem;
+		padding-right: 0.6rem;
+		padding-top: 0.4rem;
+
+		&:hover {
+			background-color: $primary-button-color-hover;
+			border-color: $primary-button-border-color-hover;
+			color: $white;
+
+			&:before {
+				width: 52px;
+			}
+		}
+
+		&:before {
+			border-radius: 2px;
+			content: " ";
+			width: 34px;
+			background-color: #fff;
+			height: 2px;
+			transition: width 0.2s ease-in-out;
+		}
+
+		i {
+			font-size: 30px;
+			margin-left: -20px;
+		}
+	}
+
+	&--transparent {
+		background-color: transparent;
+	}
+
+	&--disabled {
+		cursor: not-allowed;
+		opacity: 0.4;
+		pointer-events: none;
+		user-select: none;
+	}
+
+	&--view {
+		font-size: 24px;
+		left: 50%;
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		transform: translate3d(-50%, -50%, 0);
+		transition: opacity 0.2s ease-in-out;
+		z-index: 1;
+	}
+
+	// &--icon {
+	// 	background-color: transparent;
+	// 	border: none;
+	// 	outline: none;
+	// 	padding: 6px;
+
+	// 	&:hover {
+	// 		background-color: transparent;
+	// 		color: $primary-color;
+	// 		text-decoration: none;
+	// 	}
+
+	// 	i {
+	// 		display: block;
+	// 		font-size: inherit;
+	// 	}
+	// }
+
+	/* &--close {
+		font-size: 24px;
+		line-height: 1;
+		padding: 0.6rem;
+	} */
+
+	/* &--facebook {
+		background-color: $facebook-color;
+		border-color: $facebook-color;
+		color: $white;
+
+		&:hover {
+			background-color: darken($facebook-color, 5%);
+		}
+	}
+
+	&--google {
+		background-color: $google-color;
+		border-color: $google-color;
+		color: $white;
+
+		&:hover {
+			background-color: $google-color;
+		}
+	}
+
+	&--linkedin {
+		background-color: $linkedin-color;
+		border-color: $linkedin-color;
+		color: $white;
+
+		&:hover {
+			background-color: $linkedin-color;
+		}
+	} */
+	&--facebook {
+		background-color: $facebook-color;
+		border-color: $facebook-color;
+		color: $white;
+		width: 100%;
+
+		&:hover {
+			background-color: darken($facebook-color, 5%);
+		}
+
+		i {
+			font-size: 24px;
+		}
+	}
+
+	&--gmail {
+		background-color: $google-color;
+		border-color: $google-color;
+		color: $white;
+		width: 100%;
+
+		&:hover {
+			background-color: darken($google-color, 5%);
+		}
+
+		i {
+			font-size: 24px;
+		}
+	}
+
+	&-group {
+		display: flex;
+		flex-flow: row wrap;
+		grid-gap: 1rem;
+	}
+}
