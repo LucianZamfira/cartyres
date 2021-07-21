@@ -1,16 +1,13 @@
 .carousel {
-	&-cards {
-		.card {
-			margin-top: 1rem;
-			margin-bottom: 1rem;
-		}
+	&-partners {
+		padding: 1rem 0;
 	}
 
-	&-preview {
-		.owl-stage-outer {
-			border-radius: $border-radius;
-		}
-	}
+	// 	&-preview {
+	// 		.owl-stage-outer {
+	// 			border-radius: $border-radius;
+	// 		}
+	// 	}
 }
 
 // Desktops
@@ -37,7 +34,7 @@
 
 // Mobiles/Tablets
 @media (max-width: 767px) {
-	.carousel {
+	/* .carousel {
 		&-hero {
 			.item {
 				min-height: auto;
@@ -67,7 +64,7 @@
 		// .category {
 		// 	font-size: 1.1em;
 		// }
-	}
+	} */
 }
 
 // Mobiles

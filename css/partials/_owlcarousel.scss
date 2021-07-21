@@ -31,9 +31,8 @@
 	}
 
 	.owl-stage-outer {
-		overflow: hidden;
-		padding-top: 40px;
 		position: relative;
+		overflow: hidden;
 		/* fix for flashing background */
 		-webkit-transform: translate3d(0px, 0px, 0px);
 	}
@@ -58,6 +57,7 @@
 	}
 
 	.owl-item .image {
+		height: auto;
 		width: 100%;
 	}
 
@@ -69,21 +69,18 @@
 	}
 
 	.owl-dots {
-		align-items: center;
+		bottom: -5px;
 		justify-content: center;
-		right: 1rem;
-		top: 38px;
+		left: 0;
+		right: 0;
 	}
 
 	.owl-nav {
-		top: 0;
-		right: 0;
-		padding: 0 1rem;
-		// justify-content: space-between;
-		// left: -15px;
-		// right: -15px;
-		// top: 50%;
-		// transform: translateY(-50%);
+		justify-content: space-between;
+		left: -15px;
+		right: -15px;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 
 	.owl-nav.disabled,
@@ -100,14 +97,14 @@
 
 	.owl-nav button.owl-prev,
 	.owl-nav button.owl-next {
-		background-color: $primary-color;
-		color: $white;
+		background-color: $white;
 		border: medium none;
-		margin-left: 0.6rem;
-		font-size: 16px;
+		box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
+		color: $primary-text-color;
+		font-size: 22px;
 		line-height: 1;
 		outline: none;
-		padding: 6px;
+		padding: 8px;
 		pointer-events: all;
 		text-align: center;
 		// transition: transform 0.12s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -118,30 +115,36 @@
 		}
 
 		&:hover {
-			background-color: darken($primary-color, 5%);
+			color: $primary-color;
+			// transform: scale(1.1);
+			// opacity: 0.9;
 		}
 
 		&.disabled {
-			opacity: 0.2;
-			pointer-events: none;
+			opacity: 0;
 		}
 	}
 
 	.owl-dot {
-		background-color: $primary-color;
+		// background-color: $border-color;
+		// background-color: rgba($primary-color, 0.4);
+		// background-color: $primary-color;
+		// border-radius: 50%;
+		background-color: rgba($primary-color, 0.3);
 		border: none;
 		color: inherit;
 		font: inherit;
-		height: 2px;
-		margin: 0;
+		height: 15px;
+		margin: 0.5rem;
 		outline: none;
 		padding: 0;
-		pointer-events: none;
+		pointer-events: all;
 		transition: all 0.2s ease-in-out;
-		width: 50px;
+		width: 15px;
 
 		&.active {
-			height: 4px;
+			background-color: rgba($primary-color, 0.8);
+			width: 40px;
 		}
 	}
 

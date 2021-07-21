@@ -6,42 +6,12 @@ section {
 	&:not([class*="section--"]) {
 		padding-top: 0;
 	}
+}
 
-	&[class*="section--"] {
-		& + section {
-			padding-top: $section-paddings;
-		}
+[class*="section--"] {
+	& + section {
+		padding-top: $section-paddings;
 	}
-
-	/* & + section:not([class="section--cream"]),
-	& + section:not([class="section--background"]),
-	& + section:not([class="section--top"]) {
-		padding-top: 0;
-	}
-
-	&:not(.section--cream) &:not(.section--background) &:not(.section--top) {
-		padding-top: 0;
-	}
-
-	&:not([class="section--cream"]) {
-		padding-top: 0;
-	} */
-
-	/* &:not([class*="section--"]) {
-		padding-top: 0;
-	}
-
-	&.section {
-		&--background,
-		&--top,
-		&--breadcrumbs,
-		&--cream,
-		&--secondary {
-			& + section {
-				padding-top: $section-paddings;
-			}
-		}
-	} */
 }
 
 .section {
@@ -148,6 +118,14 @@ section {
 			max-width: $container-hero-max-width;
 			padding-bottom: 6rem;
 			padding-top: 6rem;
+		}
+	}
+
+	&--overlap {
+		padding-top: 0 !important;
+
+		.element {
+			margin-top: -4rem;
 		}
 	}
 
