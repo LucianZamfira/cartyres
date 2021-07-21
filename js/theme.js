@@ -86,14 +86,14 @@ $(document).ready(function () {
 	});
 
 	// Init toast start
-	$('.button--favorite').on('click', function (event) {
+	$('.button--toast').on('click', function (event) {
 		event.preventDefault();
 
-		$('#favoriteToast').toast('show');
+		$('#defaultToast').toast('show');
 		console.log('myToast: hidden.bs.toast');
 	});
 
-	$('#favoriteToast').on('hidden.bs.toast', function () {
+	$('#defaultToast').on('hidden.bs.toast', function () {
 		console.log('myToast: hidden.bs.toast');
 	});
 	// Init toast end
