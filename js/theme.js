@@ -99,22 +99,22 @@ $(document).ready(function () {
 	// Init toast end
 
 	// Sticky menu start
-	// var headerHeight = $('header').outerHeight();
+	var headerHeight = $('header').outerHeight();
 
 	// If window resize, recalculate header height
-	// window.onresize = function () {
-	// 	headerHeight = $('header').outerHeight();
-	// };
+	window.onresize = function () {
+		headerHeight = $('header').outerHeight();
+	};
 
 	window.onscroll = function () {
 		var scroll = window.pageYOffset;
 
 		if (window.innerWidth >= 320) {
-			if (scroll < $('header').outerHeight()) {
+			if (scroll < headerHeight) {
 				$('body').removeAttr('style');
 				$('header').attr('class', 'sticky-no');
 			} else {
-				$('body').css('padding-top', $('header').outerHeight());
+				$('body').css('padding-top', headerHeight);
 				$('header').attr('class', 'sticky-yes');
 			}
 		}
