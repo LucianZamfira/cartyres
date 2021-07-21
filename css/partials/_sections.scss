@@ -167,6 +167,42 @@ section {
 		}
 	}
 
+	&--testimonial {
+		background-color: $secondary-color;
+		color: $white;
+
+		.headline {
+			color: $white;
+		}
+
+		.client {
+			font-size: 1.375em;
+			font-weight: 600;
+			align-self: flex-end;
+		}
+
+		aside {
+			display: flex;
+			flex-direction: column;
+			opacity: 0.6;
+			padding-top: 2rem;
+			position: relative;
+
+			&:after {
+				content: "\e900";
+				font-family: "icons";
+				font-size: 38px;
+				left: -1rem;
+				position: absolute;
+				top: -1rem;
+			}
+
+			p {
+				font-size: 1.75em;
+			}
+		}
+	}
+
 	&--breadcrumbs {
 		background-color: $cream;
 		padding-top: 1rem;
