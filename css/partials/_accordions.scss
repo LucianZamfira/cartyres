@@ -1,0 +1,141 @@
+.fade {
+	transition: opacity 0.1s ease-in-out;
+
+	&:not(.show) {
+		opacity: 0;
+	}
+}
+
+.collapse {
+	&:not(.show) {
+		display: none;
+	}
+}
+
+.collapsing {
+	height: 0;
+	overflow: hidden;
+	transition: height 0.1s ease-in-out;
+}
+
+.accordion {
+	&-collapse {
+		transform: translateY(-0.8rem);
+	}
+
+	&-body {
+		background-color: $secondary-color;
+		border-radius: 0 0 $border-radius $border-radius;
+		color: $white;
+		padding: 1rem 1.5rem 1.5rem 1.5rem;
+
+		hr {
+			background-color: rgba($white, 0.5);
+			margin: 0 0 1rem 0;
+		}
+	}
+
+	&-button {
+		align-items: center;
+		background-color: $white;
+		display: flex;
+		padding: 0.8rem 1.5rem;
+		position: relative;
+		text-align: left;
+		transition: background-color 0.2s ease-in-out;
+		width: 100%;
+		z-index: 5;
+
+		&:not(.collapsed) {
+			background-color: $secondary-color;
+			border-bottom-left-radius: unset;
+			border-bottom-right-radius: unset;
+			border-color: $secondary-color;
+			color: $white;
+
+			&:after {
+				content: "\e908";
+			}
+
+			&:hover {
+				background-color: $secondary-color;
+				color: $white;
+			}
+		}
+
+		&:after {
+			content: "\e905";
+			font-family: "icons";
+			font-size: 22px;
+			margin-left: auto;
+		}
+
+		&:hover {
+			background-color: $secondary-color;
+			color: $white;
+			z-index: 2;
+		}
+
+		&:focus {
+			outline: 0;
+		}
+	}
+
+	&-header {
+		margin-bottom: 0;
+		font-size: 1.375em;
+	}
+
+	&-item {
+		margin-bottom: 1rem;
+		overflow: hidden;
+
+		/* &:first-of-type {
+			position: relative;
+
+			.accordion-button {
+				position: relative;
+			}
+		}
+
+		&:last-of-type {
+			border-top-left-radius: 30px;
+
+			.accordion-button {
+				&.collapsed {
+					position: relative;
+				}
+			}
+
+			.accordion-collapse {
+				position: relative;
+			}
+		}
+
+		&:not(:first-of-type) {
+			border-top: 0;
+		} */
+	}
+
+	/* &-flush {
+		.accordion-collapse {
+			border-width: 0;
+		}
+
+		.accordion-item {
+			border-right: 0;
+			border-left: 0;
+
+			&:first-child {
+				border-top: 0;
+			}
+			&:last-child {
+				border-bottom: 0;
+			}
+
+			.accordion-button {
+				opacity: 0.9;
+			}
+		}
+	} */
+}
