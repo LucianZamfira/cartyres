@@ -341,6 +341,17 @@ section {
 				}
 			}
 		}
+
+		&--article {
+			padding-top: 2rem !important;
+
+			aside {
+				img {
+					border-top-left-radius: $border-radius;
+					border-top-right-radius: $border-radius;
+				}
+			}
+		}
 	}
 }
 
