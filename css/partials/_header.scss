@@ -134,20 +134,18 @@ header {
 			display: none;
 		}
 
-		.logo {
-			// align-items: center;
-			// display: flex;
-			// font-size: 45px;
-			// justify-content: center;
-			margin: 1rem 0;
+		a {
+			&.logo {
+				margin: 1rem 0;
 
-			// &:before {
-			// 	content: "\e900";
-			// 	font-family: "icons";
-			// }
+				img {
+					height: 30px;
+					margin: 0;
+				}
+			}
 
-			img {
-				height: 30px;
+			.logo-slogan {
+				display: none;
 			}
 		}
 
