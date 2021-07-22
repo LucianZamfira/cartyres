@@ -573,12 +573,12 @@ header {
 	header {
 		.logo {
 			&-image {
-				height: 36px;
+				height: 32px;
 			}
 
 			&-slogan {
-				max-width: 320px;
-				font-size: 1em;
+				max-width: 250px;
+				font-size: 0.95em;
 			}
 		}
 	}
