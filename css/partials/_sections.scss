@@ -170,7 +170,7 @@ section {
 	}
 
 	&--testimonial {
-		background-color: $secondary-color;
+		background-color: $primary-color;
 		color: $white;
 
 		.headline {
@@ -382,6 +382,10 @@ section {
 		// &--hero,
 		&--top,
 		&--background {
+			h1 {
+				font-size: 2.625em;
+			}
+
 			.container {
 				padding: 2rem 1rem;
 			}

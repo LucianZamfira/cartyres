@@ -1,5 +1,5 @@
 header {
-	background-color: $primary-color;
+	background-color: $secondary-color;
 	color: $white;
 	position: relative;
 	z-index: 10;
@@ -81,8 +81,6 @@ header {
 		display: flex;
 		width: 100%;
 		justify-content: flex-end;
-		// overflow: hidden;
-		transform: translateX(1.2rem);
 	}
 
 	nav {
@@ -709,14 +707,20 @@ header {
 		}
 	} */
 	header {
+		.toolbar {
+			display: none;
+		}
+
 		.logo {
+			margin: 1rem 0;
+
 			&-image {
-				height: 32px;
+				height: 30px;
 			}
 
 			&-slogan {
 				max-width: 260px;
-				font-size: 0.9em;
+				font-size: 0.8em;
 			}
 		}
 	}

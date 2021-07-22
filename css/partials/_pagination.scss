@@ -28,7 +28,7 @@
 
 		&:hover,
 		.active {
-			background-color: $secondary-color;
+			background-color: $primary-color;
 			color: $white;
 			text-decoration: none;
 			transition: all 0.05s ease-in-out;
@@ -46,7 +46,7 @@
 
 		a,
 		span {
-			background-color: $secondary-color;
+			background-color: $primary-color;
 			color: $white;
 		}
 	}
