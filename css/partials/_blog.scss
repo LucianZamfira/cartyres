@@ -147,7 +147,7 @@
 	}
 }
 
-aside {
+.slim {
 	.card {
 		&--article {
 			border-radius: unset;
@@ -163,7 +163,7 @@ aside {
 
 			.headline {
 				color: $primary-text-color;
-				font-size: 1.25em;
+				font-size: 1.125em;
 			}
 
 			.date {
