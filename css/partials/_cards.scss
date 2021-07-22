@@ -297,3 +297,44 @@
 		// }
 	}
 }
+
+// Mobiles/Tablets
+@media (max-width: 567px) {
+	.card {
+		&--article {
+			box-shadow: 0 0 18px rgba($black, 0.15);
+			flex-direction: column;
+
+			.content {
+				padding: 0;
+			}
+
+			.headline {
+				font-size: 1.375em;
+			}
+
+			// .date {
+			// 	color: $black;
+			// 	font-weight: 600;
+			// }
+
+			// .link {
+			// 	height: 100%;
+			// 	left: 0;
+			// 	position: absolute;
+			// 	text-indent: -9999px;
+			// 	top: 0;
+			// 	width: 100%;
+			// }
+
+			.aside {
+				flex-basis: unset;
+				margin-bottom: 1rem;
+
+				img {
+					position: static;
+				}
+			}
+		}
+	}
+}

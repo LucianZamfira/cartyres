@@ -151,6 +151,8 @@
 	.card {
 		&--article {
 			border-radius: unset;
+			box-shadow: none;
+			flex-direction: row;
 			padding: 0;
 
 			&:hover {
@@ -159,6 +161,11 @@
 				.headline {
 					color: $secondary-color;
 				}
+			}
+
+			.aside {
+				flex-basis: 25%;
+				margin-right: 1rem;
 			}
 
 			.headline {
