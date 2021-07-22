@@ -48,8 +48,12 @@ button,
 	}
 }
 
+[class*="button"] {
+	min-width: 140px;
+}
+
 .button {
-	text-transform: uppercase;
+	// text-transform: uppercase;
 
 	&--medium {
 		font-size: 0.95em;
