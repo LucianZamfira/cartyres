@@ -101,9 +101,25 @@
 		height: 100%;
 		justify-content: center;
 		min-height: 26vh;
-		overflow: hidden;
+		// overflow: hidden;
 		padding: 4rem 2rem;
 		position: relative;
+
+		&:after {
+			content: " ";
+			background-color: rgba($primary-color, 0.36);
+			border-radius: $border-radius + 38px $border-radius + 16px $border-radius + 38px $border-radius + 16px;
+			bottom: -8px;
+			left: -8px;
+			position: absolute;
+			right: -8px;
+			top: -8px;
+			z-index: -2;
+		}
+
+		.section-picture {
+			border-radius: $border-radius + 12px;
+		}
 
 		.logo {
 			align-self: flex-start;
