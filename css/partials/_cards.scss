@@ -1,8 +1,10 @@
-.card {
+[class*="card"] {
 	background-color: $white;
 	border-radius: $card-border-radius;
 	padding: $card-padding;
+}
 
+.card {
 	&:hover,
 	&.effect {
 		box-shadow: 0 0 18px rgba($black, 0.15);
@@ -147,6 +149,12 @@
 
 // Large screens
 @media (min-width: 1250px) {
+	.card {
+		&--about {
+			margin-left: -6rem;
+			padding: 3rem;
+		}
+	}
 }
 
 // Tablets/Laptops
