@@ -8,14 +8,9 @@ header {
 		align-items: center;
 		display: flex;
 		flex-flow: row wrap;
-		// height: 92px;
 		justify-content: space-between;
 		z-index: 10;
 	}
-
-	// i {
-	// 	font-size: 24px;
-	// }
 
 	&:before {
 		background-color: transparent;
@@ -116,6 +111,17 @@ header {
 				margin-top: 0.8rem;
 			}
 		}
+
+		a {
+			&:hover {
+				color: $primary-color;
+				text-decoration: underline;
+			}
+		}
+
+		.active {
+			font-weight: 500;
+		}
 	}
 }
 
@@ -214,34 +220,34 @@ header {
 		}
 	}
 
-	&-aside {
-		background-color: $white;
-		bottom: 0;
-		color: $primary-text-color;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		min-width: 380px;
-		padding: 4rem;
-		position: fixed;
-		right: 0;
-		top: 0;
-		transform: translate3d(100%, 0, 0);
-		transition: transform 0.2s ease-in-out;
-		visibility: hidden;
-		z-index: 10;
+	// &-aside {
+	// 	background-color: $white;
+	// 	bottom: 0;
+	// 	color: $primary-text-color;
+	// 	display: flex;
+	// 	flex-direction: column;
+	// 	justify-content: space-between;
+	// 	min-width: 380px;
+	// 	padding: 4rem;
+	// 	position: fixed;
+	// 	right: 0;
+	// 	top: 0;
+	// 	transform: translate3d(100%, 0, 0);
+	// 	transition: transform 0.2s ease-in-out;
+	// 	visibility: hidden;
+	// 	z-index: 10;
 
-		.link {
-			font-size: 1.4em;
-			font-weight: 600;
-			margin: 0.6rem 0;
-		}
+	// 	.link {
+	// 		font-size: 1.4em;
+	// 		font-weight: 600;
+	// 		margin: 0.6rem 0;
+	// 	}
 
-		.headline {
-			font-size: 18px;
-			margin-bottom: 0.5rem;
-		}
-	}
+	// 	.headline {
+	// 		font-size: 18px;
+	// 		margin-bottom: 0.5rem;
+	// 	}
+	// }
 
 	&-main {
 		display: flex;
