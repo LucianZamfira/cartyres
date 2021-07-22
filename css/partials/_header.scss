@@ -47,14 +47,14 @@ header {
 		margin: 2rem 0;
 		text-decoration: none;
 
-		&:hover {
-			color: $white;
-		}
-
-		.image {
+		&-image {
 			height: 42px;
 			margin-bottom: 0.4rem;
 			width: auto;
+		}
+
+		&:hover {
+			color: $white;
 		}
 	}
 
@@ -146,28 +146,18 @@ header {
 			&.logo {
 				margin: 1rem 0;
 
-				img {
+				.logo-image {
 					height: 30px;
 					margin: 0;
 				}
-			}
 
-			.logo-slogan {
-				display: none;
+				.logo-slogan {
+					display: none;
+				}
 			}
 		}
 
 		.menu {
-			/* &-top {
-				.trigger {
-					&:hover,
-					&.active {
-						// color: lighten($secondary-color, 28%);
-						color: $inverted-color;
-					}
-				}
-			} */
-
 			&-toggle {
 				&:hover {
 					color: $inverted-color;
@@ -182,13 +172,6 @@ header {
 }
 
 .menu {
-	/* &-mobile {
-		align-self: center;
-		display: none;
-		min-width: auto;
-		padding: 0.8rem;
-	} */
-
 	&-top {
 		align-items: center;
 		display: flex;
@@ -587,15 +570,20 @@ header {
 		}
 	} */
 }
-// Tablets and Desktops
-@media (max-width: 1024px) {
-	/* .menu {
-		&-main {
-			> li {
-				margin: 0 0.6rem;
+// Tablets and Laptops
+@media (max-width: 1140px) {
+	header {
+		.logo {
+			&-image {
+				height: 36px;
+			}
+
+			&-slogan {
+				max-width: 320px;
+				font-size: 1em;
 			}
 		}
-	} */
+	}
 }
 
 // Mobiles/Tablets
@@ -722,7 +710,7 @@ header {
 	} */
 	header {
 		.logo {
-			.image {
+			&-image {
 				height: 32px;
 			}
 
