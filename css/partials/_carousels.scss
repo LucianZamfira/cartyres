@@ -2,6 +2,15 @@
 	&-partners {
 		padding: 1.5rem 0;
 
+		img {
+			filter: grayscale(100%);
+			transition: filter 0.2s ease-in-out;
+
+			&:hover {
+				filter: unset;
+			}
+		}
+
 		.owl-item {
 			align-items: center;
 			display: flex;
