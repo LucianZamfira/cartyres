@@ -35,6 +35,25 @@
 		}
 	}
 
+	&--mini {
+		padding: 1.2rem;
+
+		.headline {
+			font-size: 1.225em;
+			margin-bottom: 0;
+		}
+
+		.separator {
+			margin: 0.5rem 0;
+		}
+
+		p {
+			font-weight: 400;
+			font-size: 1em;
+			margin: 0;
+		}
+	}
+
 	&--article {
 		position: relative;
 		display: flex;
