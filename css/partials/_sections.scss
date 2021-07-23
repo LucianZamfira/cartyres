@@ -1,3 +1,9 @@
+[class*="section--"] {
+	& + section {
+		padding-top: $section-paddings;
+	}
+}
+
 section {
 	display: block;
 	padding: $section-paddings 0;
@@ -6,16 +12,12 @@ section {
 	&:not([class*="section--"]) {
 		padding-top: 0;
 	}
-}
 
-[class*="section--"] {
-	& + section {
-		padding-top: $section-paddings;
+	&.section--aside {
+		padding: 0;
 	}
-}
 
-.section {
-	&--secondary {
+	&.section--secondary {
 		background-color: $secondary-site-background;
 		padding: 1.2rem 0;
 		position: relative;
@@ -36,33 +38,7 @@ section {
 		}
 	}
 
-	&-picture {
-		background-color: darken($primary-color, 12%);
-		bottom: 0;
-		left: 0;
-		overflow: hidden;
-		position: absolute;
-		right: 0;
-		top: 0;
-		z-index: -1;
-
-		img {
-			border-radius: 0;
-			left: 50%;
-			margin: 0;
-			max-height: none;
-			max-width: 100%;
-			min-height: 100%;
-			min-width: 100%;
-			object-fit: cover;
-			opacity: 0.28;
-			position: absolute;
-			top: 50%;
-			transform: translateX(-50%) translateY(-50%);
-		}
-	}
-
-	&--hero {
+	&.section--hero {
 		padding: 0;
 		position: relative;
 
@@ -85,7 +61,7 @@ section {
 		}
 	}
 
-	&--top {
+	&.section--top {
 		padding: 0 1rem;
 		position: relative;
 
@@ -113,7 +89,7 @@ section {
 		}
 	}
 
-	&--overlap {
+	&.section--overlap {
 		padding-top: 0 !important;
 
 		.element {
@@ -122,33 +98,7 @@ section {
 		}
 	}
 
-	&--counter {
-		// .container {
-		// 	position: relative;
-
-		// 	&:before,
-		// 	&:after {
-		// 		border-radius: $border-radius;
-		// 		content: " ";
-		// 		height: 100%;
-		// 		position: absolute;
-		// 		right: 100%;
-		// 		width: 100vw;
-		// 	}
-
-		// 	&:before {
-		// 		background-color: $primary-color;
-		// 		transform: translateX(50px);
-		// 		top: -12px;
-		// 	}
-
-		// 	&:after {
-		// 		background-color: darken($primary-color, 10%);
-		// 		transform: translateX(38px);
-		// 		top: 0;
-		// 	}
-		// }
-
+	&.section--counter {
 		h3 {
 			font-size: 2.8em;
 			font-weight: 700;
@@ -161,7 +111,7 @@ section {
 		}
 	}
 
-	&--article {
+	&.section--article {
 		padding-top: 0 !important;
 
 		aside {
@@ -177,7 +127,7 @@ section {
 		}
 	}
 
-	&--testimonial {
+	&.section--testimonial {
 		background-color: $primary-color;
 		color: $white;
 
@@ -213,22 +163,50 @@ section {
 		}
 	}
 
-	&--breadcrumbs {
+	&.section--breadcrumbs {
 		background-color: $cream;
 		padding-top: 1rem;
 		padding-bottom: 1rem;
 	}
 
-	&--cream {
+	&.section--cream {
 		background-color: lighten($cream, 8%);
+	}
+}
+
+.section {
+	&-picture {
+		background-color: darken($primary-color, 12%);
+		bottom: 0;
+		left: 0;
+		overflow: hidden;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: -1;
+
+		img {
+			border-radius: 0;
+			left: 50%;
+			margin: 0;
+			max-height: none;
+			max-width: 100%;
+			min-height: 100%;
+			min-width: 100%;
+			object-fit: cover;
+			opacity: 0.28;
+			position: absolute;
+			top: 50%;
+			transform: translateX(-50%) translateY(-50%);
+		}
 	}
 }
 
 .aside {
 	&--cream {
 		background-color: $cream;
-		border-radius: $border-radius;
-		padding: 1.2rem;
+		border-radius: 0 0 0 $border-radius;
+		padding: 1.6rem;
 	}
 }
 
