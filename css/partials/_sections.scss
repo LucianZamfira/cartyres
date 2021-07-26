@@ -38,6 +38,27 @@ section {
 		}
 	}
 
+	&.section--half {
+		aside {
+			padding-left: 3rem;
+			padding-right: 3rem;
+		}
+
+		.section-headline {
+			color: $white;
+			font-size: 3.25em;
+		}
+
+		.picture {
+			right: auto;
+			width: 50%;
+		}
+
+		> div p {
+			font-size: 1.375em;
+		}
+	}
+
 	&.section--hero {
 		padding: 0;
 		position: relative;

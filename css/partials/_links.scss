@@ -47,6 +47,18 @@ a {
 		}
 	}
 
+	&--back {
+		align-items: center;
+		display: inline-flex;
+		font-size: 1.125em;
+		font-weight: 400;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
 	&--icon {
 		align-items: center;
 		display: inline-flex;
