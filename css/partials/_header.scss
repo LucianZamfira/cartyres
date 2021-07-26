@@ -580,6 +580,7 @@ header {
 		}
 	} */
 }
+
 // Tablets and Laptops
 @media (max-width: 1140px) {
 	header {
@@ -597,7 +598,7 @@ header {
 }
 
 // Mobiles/Tablets
-@media (max-width: 836px) {
+@media (max-width: 996px) {
 	.menu {
 		&-top {
 			display: none;

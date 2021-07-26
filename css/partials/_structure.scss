@@ -247,6 +247,19 @@ main {
 }
 
 .content {
+	&--hero {
+		align-items: flex-start;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-left: 0;
+		max-width: $container-hero-max-width;
+		min-height: 52vh;
+		padding: 4rem 0;
+		position: relative;
+		z-index: 1;
+	}
+
 	&-group {
 		margin-bottom: $content-margin-bottom;
 
@@ -462,6 +475,11 @@ main {
 
 // Tablets
 @media (max-width: 767px) {
+	.content {
+		&--hero {
+			max-width: unset;
+		}
+	}
 }
 
 // Mobiles

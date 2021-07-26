@@ -192,7 +192,7 @@ ol {
 				&:after {
 					background-color: $leaf;
 					position: absolute;
-					top: 60px;
+					top: 50px;
 				}
 
 				&:before {
@@ -399,6 +399,10 @@ ol {
 			> li {
 				flex-basis: 50%;
 			}
+		}
+
+		&--steps {
+			display: none;
 		}
 	}
 }

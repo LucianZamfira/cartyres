@@ -43,20 +43,6 @@ section {
 		position: relative;
 		color: $white;
 
-		// .container {
-		.content--hero {
-			align-items: flex-start;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			margin-left: 0;
-			max-width: $container-hero-max-width;
-			min-height: 52vh;
-			padding: 4rem 0;
-			position: relative;
-			z-index: 1;
-		}
-
 		.section-headline {
 			font-size: 3.375em;
 			font-weight: 900;
@@ -411,15 +397,15 @@ section {
 	section {
 		padding: 2rem 0;
 
-		&.section {
-			&--background,
-			&--top,
-			&--breadcrumbs,
-			&--cream,
-			&--secondary {
-				& + section {
-					padding-top: 2rem;
-				}
+		&[class*="section--"] {
+			& + section {
+				padding-top: 2rem;
+			}
+		}
+
+		&.section--hero {
+			.section-headline {
+				font-size: 2.625em;
 			}
 		}
 	}
@@ -440,16 +426,6 @@ section {
 
 			.container {
 				padding: 2rem 1rem;
-			}
-		}
-
-		&--hero {
-			.container {
-				padding: 8rem 1rem 2rem 1rem;
-			}
-
-			.section-headline {
-				font-size: 3.125em;
 			}
 		}
 	}
