@@ -246,6 +246,10 @@ blockquote {
 		font-weight: 600;
 	}
 
+	&-bold {
+		font-weight: 900;
+	}
+
 	&-thin {
 		font-weight: 300;
 	}
@@ -271,7 +275,7 @@ blockquote {
 	}
 
 	&-emphasis {
-		font-size: 1.125em;
+		font-size: 3.125em;
 	}
 }
 

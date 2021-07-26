@@ -148,38 +148,73 @@
 		margin-bottom: 2rem;
 	}
 
+	&--green {
+		color: $white;
+		text-align: center;
+
+		.picture {
+			background-color: $leaf;
+		}
+
+		.title {
+			color: $white;
+			font-weight: 900;
+			font-size: 3.125em;
+			margin-bottom: 1rem;
+		}
+
+		p {
+			margin: 0;
+			font-size: 1.375em;
+		}
+	}
+
 	&--background {
 		background-color: transparent;
-		border-radius: $border-radius;
+		color: $white;
 		display: flex;
 		flex-direction: column;
 		height: 100%;
 		justify-content: center;
 		min-height: 26vh;
-		// overflow: hidden;
 		padding: 4rem 2rem;
 		position: relative;
+		z-index: 1;
 
-		&:after {
-			content: " ";
-			background-color: rgba($primary-color, 0.36);
-			border-radius: $border-radius + 38px $border-radius + 16px $border-radius + 38px $border-radius + 16px;
-			bottom: -8px;
-			left: -8px;
-			position: absolute;
-			right: -8px;
-			top: -8px;
-			z-index: -2;
+		&.blue-effect {
+			.picture {
+				border-radius: $border-radius + 12px;
+			}
+
+			&:after {
+				content: " ";
+				background-color: rgba($primary-color, 0.36);
+				border-radius: $border-radius + 38px $border-radius + 16px $border-radius + 38px $border-radius + 16px;
+				bottom: -8px;
+				left: -8px;
+				position: absolute;
+				right: -8px;
+				top: -8px;
+				z-index: -2;
+			}
 		}
 
-		.section-picture {
-			border-radius: $border-radius + 12px;
+		&.inner-effect {
+			&:after {
+				content: " ";
+				box-shadow: inset 0px 0px 0px 1px $white;
+				border-radius: $border-radius;
+				bottom: 12px;
+				left: 12px;
+				position: absolute;
+				right: 12px;
+				top: 12px;
+			}
 		}
 
-		.logo {
-			align-self: flex-start;
-			color: $white;
-			font-size: 5em;
+		.picture {
+			border-radius: $border-radius;
+			// z-index: auto;
 		}
 
 		.headline {
@@ -188,11 +223,6 @@
 			margin: 0;
 			position: relative;
 			z-index: 1;
-		}
-
-		.title {
-			margin-top: auto;
-			margin-bottom: auto;
 		}
 	}
 }
