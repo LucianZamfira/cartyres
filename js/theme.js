@@ -147,8 +147,6 @@ $(document).ready(function () {
 		} else {
 			$('.scroll-top').addClass('show');
 		}
-
-		console.log(event, scroll);
 	};
 
 	// document.addEventListener('scroll', onScroll);
