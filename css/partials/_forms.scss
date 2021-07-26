@@ -85,6 +85,36 @@ select {
 }
 
 .input {
+	&--inverted {
+		background-color: rgba($gray, 0.8);
+		border-color: rgba($gray, 0.8);
+		font-weight: 400;
+		color: #17191b;
+
+		&:focus {
+			border-color: rgba($gray, 0.8);
+			box-shadow: 0 0 8px rgba($white, 0.4);
+		}
+
+		&::placeholder {
+			color: #2a2e33;
+			font-style: normal;
+			font-weight: 300;
+		}
+	}
+
+	&--sky {
+		background-color: $sky;
+		border-color: $sky;
+		color: $primary-color;
+		font-weight: 400;
+
+		&::placeholder {
+			color: rgba($primary-color, 0.6);
+			font-style: normal;
+		}
+	}
+
 	&--fluid {
 		width: 100%;
 	}
@@ -286,6 +316,7 @@ label,
 			font-size: $custom-type-font-size;
 			font-weight: initial;
 			justify-content: center;
+			opacity: 0;
 			left: 0;
 			line-height: 1;
 			position: absolute;

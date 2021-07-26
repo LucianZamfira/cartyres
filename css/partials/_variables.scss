@@ -11,7 +11,9 @@ $black: #333333;
 $dark: #5d5d5d;
 $cream: #f5f5f5;
 $indigo: #525199;
-$sky: #8796b2;
+// $sky: #8796b2;
+$sky: #e0ebf5;
+$gray: #bababa;
 $fuchsia: #ab0066;
 $lime: #d0d93c;
 $leaf: #0eba07;
@@ -63,7 +65,7 @@ $site-line-height: 1.4; //@at-root
 // STRUCTURE //
 // Containers
 $container-max-width: 1460px; //@at-root
-$container-hero-max-width: 1540px; //@at-root
+$container-hero-max-width: 60%; //@at-root
 $container-paddings: 1.2rem; //@at-root
 $container-smaller: 420px; //@at-root
 $container-small: 620px; //@at-root

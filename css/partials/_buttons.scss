@@ -174,16 +174,16 @@ button,
 		user-select: none;
 	}
 
-	&--view {
-		font-size: 24px;
-		left: 50%;
-		opacity: 0;
-		position: absolute;
-		top: 50%;
-		transform: translate3d(-50%, -50%, 0);
-		transition: opacity 0.2s ease-in-out;
-		z-index: 1;
-	}
+	// &--view {
+	// 	font-size: 24px;
+	// 	left: 50%;
+	// 	opacity: 0;
+	// 	position: absolute;
+	// 	top: 50%;
+	// 	transform: translate3d(-50%, -50%, 0);
+	// 	transition: opacity 0.2s ease-in-out;
+	// 	z-index: 1;
+	// }
 
 	// &--icon {
 	// 	background-color: transparent;
@@ -203,11 +203,19 @@ button,
 	// 	}
 	// }
 
-	/* &--close {
+	&--close {
 		font-size: 24px;
+		border: medium none;
 		line-height: 1;
-		padding: 0.6rem;
-	} */
+		min-width: auto;
+		padding: 0.2rem;
+
+		&:hover {
+			background-color: transparent;
+			transform: scale(1.2);
+			color: $secondary-color;
+		}
+	}
 
 	/* &--facebook {
 		background-color: $facebook-color;
@@ -237,7 +245,7 @@ button,
 		&:hover {
 			background-color: $linkedin-color;
 		}
-	} */
+	} 
 	&--facebook {
 		background-color: $facebook-color;
 		border-color: $facebook-color;
@@ -266,7 +274,7 @@ button,
 		i {
 			font-size: 24px;
 		}
-	}
+	}*/
 
 	&-group {
 		display: flex;

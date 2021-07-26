@@ -215,7 +215,7 @@
 	transition: opacity 0.15s linear;
 }
 
-.product-modal {
+/* .product-modal {
 	.modal {
 		&-header {
 			border: none;
@@ -227,7 +227,7 @@
 			max-width: 1170px;
 		}
 	}
-}
+} */
 
 .button {
 	&--close {
@@ -241,6 +241,10 @@
 // Desktops
 @media (min-width: 768px) {
 	.modal {
+		&-dialog {
+			max-width: 860px;
+		}
+
 		&-body {
 			h2 {
 				padding-right: 2rem;
@@ -284,10 +288,10 @@
 // Tablets
 @media (min-width: 576px) {
 	.modal {
-		&-dialog {
+		/* &-dialog {
 			max-width: 980px;
 			// margin: 1.75rem auto;
-		}
+		} */
 
 		&-dialog-scrollable {
 			max-height: calc(100% - 3.5rem);

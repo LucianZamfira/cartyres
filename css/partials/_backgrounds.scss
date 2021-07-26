@@ -1,0 +1,9 @@
+.background {
+	&--inverted {
+		background-color: rgba($gray, 0.8);
+	}
+
+	&--sky {
+		background-color: $sky;
+	}
+}
