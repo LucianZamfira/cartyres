@@ -88,10 +88,22 @@
 			<section class="section--half">
 				<div class="container">
 					<div class="row align-items-center">
-						<div class="col-6 col-md-12">
+						<article class="col-6 col-md-12">
 							<h1 class="section-headline">What we find out about your car</h1>
 							<p>Surrounded public earn pleasure sweet happily were order possible observe temperature flower struck vowel paint green won stronger consist thrown sand neighbor sugar people.</p>
-						</div>
+
+							<picture class="picture">
+								<!-- Webp modern browsers -->
+								<source type="image/webp" media="(min-width: 769px)" srcset="images/sections/parking-default.webp" />
+								<source type="image/webp" media="(max-width: 768px)" srcset="images/sections/parking-mobile.webp" />
+
+								<!-- Jpeg fallback -->
+								<source type="" media="(min-width: 769px)" srcset="images/sections/parking-default.jpg" />
+								<source type="" media="(max-width: 768px)" srcset="images/sections/parking-mobile.jpg" />
+
+								<img alt="Hero image" aria-hidden="true" src="images/sections/parking-default.jpg" />
+							</picture>
+						</article>
 
 						<aside class="col-6 col-md-12">
 							<a href="/" title="Go back" class="link--back mb-2"><i class="icon-arrow-left mr-1"></i>Go back</a>
@@ -142,18 +154,6 @@
 						</aside>
 					</div>
 				</div>
-
-				<picture class="picture">
-					<!-- Webp modern browsers -->
-					<source type="image/webp" media="(min-width: 769px)" srcset="images/sections/parking-default.webp" />
-					<source type="image/webp" media="(max-width: 768px)" srcset="images/sections/parking-mobile.webp" />
-
-					<!-- Jpeg fallback -->
-					<source type="" media="(min-width: 769px)" srcset="images/sections/parking-default.jpg" />
-					<source type="" media="(max-width: 768px)" srcset="images/sections/parking-mobile.jpg" />
-
-					<img alt="Hero image" aria-hidden="true" src="images/sections/parking-default.jpg" />
-				</picture>
 			</section>
 			<!-- Section end -->
 

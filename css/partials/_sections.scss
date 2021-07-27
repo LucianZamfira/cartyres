@@ -39,9 +39,22 @@ section {
 	}
 
 	&.section--half {
+		padding: 0;
+
+		article {
+			color: $white;
+			padding-right: 4rem;
+			position: static;
+
+			p {
+				font-size: 1.375em;
+			}
+		}
+
 		aside {
 			padding-left: 3rem;
 			padding-right: 3rem;
+			padding-top: 2rem;
 		}
 
 		.section-headline {
@@ -52,17 +65,6 @@ section {
 		.picture {
 			right: auto;
 			width: 50%;
-		}
-
-		.row {
-			> div {
-				color: $white;
-				padding-right: 4rem;
-
-				p {
-					font-size: 1.375em;
-				}
-			}
 		}
 	}
 
@@ -330,29 +332,27 @@ section {
 @media (max-width: 991px) {
 	section {
 		&.section--half {
+			article {
+				margin: 0;
+				padding: 2rem 1.2rem;
+				position: relative;
+
+				p {
+					font-size: 1.125em;
+				}
+			}
+
 			aside {
 				padding-left: 1.2rem;
 				padding-right: 1.2rem;
 			}
 
 			.section-headline {
-				color: initial;
 				font-size: 2.25em;
 			}
 
 			.picture {
-				display: none;
-			}
-
-			.row {
-				> div {
-					color: $primary-text-color;
-					padding-right: 1.2rem;
-
-					p {
-						font-size: 1.125em;
-					}
-				}
+				width: 100%;
 			}
 		}
 	}
