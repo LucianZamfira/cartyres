@@ -117,8 +117,8 @@ $primary-button-color-hover: darken($primary-color, 5%); //@at-root
 $primary-button-border-color-hover: darken($primary-color, 5%); //@at-root
 
 // Secondary Button
-$secondary-button-color: $sky; //@at-root
-$secondary-button-border-color: $sky; //@at-root
+$secondary-button-color: transparent; //@at-root
+$secondary-button-border-color: $primary-color; //@at-root
 // Secondary Button hover colors
 $secondary-button-color-hover: $primary-color; //@at-root
 $secondary-button-border-color-hover: $primary-color; //@at-root
@@ -135,6 +135,7 @@ $input-border-color: #d9d9d9; //@at-root
 $input-border-radius: 10px; //@at-root
 $input-focus-border-color: $primary-color; //@at-root
 $input-line-height: 1.2; //@at-root
+$input-font-weight: 400; //@at-root
 $label-color: #5d5d5d; //@at-root
 // $separator-color: #eeeeee; //@at-root
 $separator-color: #dfdfdf; //@at-root

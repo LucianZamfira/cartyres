@@ -30,6 +30,7 @@ select {
 	display: inline-block;
 	font: inherit;
 	line-height: $input-line-height;
+	font-weight: $input-font-weight;
 	margin: 0;
 	outline: none;
 	padding: $input-paddings;
@@ -40,7 +41,7 @@ select {
 	}
 
 	&::placeholder {
-		color: $primary-color;
+		color: rgba($primary-text-color, 0.4);
 		font-style: normal;
 	}
 
@@ -56,7 +57,6 @@ select {
 		padding: 0;
 
 		&:focus {
-			// font-weight: 500;
 			background-color: $sky;
 		}
 	}

@@ -56,8 +56,8 @@
 						<ul class="submenu">
 							<li><a href="about-us.html" title="About us" class="link">About us</a></li>
 							<li><a href="blog.html" title="Blog" class="link">Blog</a></li>
-							<li><a href="#" title="Flew easy anyway" class="link">Flew easy anyway</a></li>
-							<li><a href="#" title="Tyre Retailers" class="link">Tyre Retailers</a></li>
+							<li><a href="#" title="Show successful toast" class="link show-toast">Show successful toast</a></li>
+							<li><a href="#" title="Open modal" class="link" data-bs-toggle="modal" data-bs-target="#defaultModal">Open modal</a></li>
 							<li><a href="#" title="Tyre Manufacturers" class="link">Tyre Manufacturers</a></li>
 						</ul>
 					</li>
@@ -77,7 +77,13 @@
 					<li>
 						<a href="savings.html" title="Savings" class="trigger">Savings</a>
 					</li>
+
+					<li>
+						<button class="menu-close"><i class="icon-close"></i></button>
+					</li>
 				</ul>
+
+				<button class="trigger menu-toggle" title="Open navigation menu" aria-label="Open navigation menu"><i class="icon-menu"></i></button>
 			</div>
 		</header>
 		<!-- Header end -->
@@ -422,10 +428,27 @@
 						<h2>Before you see the results</h2>
 						<p>Here at TyreSpy we bring you the lowest priced car tyres available and yes, our prices include the fitting, old tyre disposal, replacement valves, wheel balancing and VAT. We make sure that we are the cheapest online all day, every day, because we monitor all online and off-line tyre prices in the UK every day, so you can save that little bit extra on your motoring costs.</p>
 
-						<input type="text" placeholder="Insert email" class="input" />
-						<p>GPDR Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-						<p>Newsletters, offers</p>
-						<button>Send</button>
+						<form action="send.php">
+							<div class="input-row">
+								<input type="text" placeholder="Insert email" class="input" />
+							</div>
+
+							<div class="input-row">
+								<label class="custom-type mb-2">
+									<input name="GDPR-modal" type="checkbox" value="GDPR-modal" />
+									<span class="checkmark"></span>
+									<span class="custom-type__label ml-1">The General Data Protection Regulation 2016/679 is a regulation in EU law on data protection and privacy in the European Union.</span>
+								</label>
+
+								<label class="custom-type">
+									<input name="newsletter-modal" type="checkbox" value="newsletter-modal" />
+									<span class="checkmark"></span>
+									<span class="custom-type__label ml-1">Newsletters, offers and discounts</span>
+								</label>
+							</div>
+
+							<button class="button--secondary button--fluid">Send</button>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -456,7 +479,7 @@
 		</div>
 		<!-- Loading Modal end -->
 
-		<buttpm class="scroll-top"><i class="icon-chevron-up"></i></buttpm>
+		<button class="scroll-top"><i class="icon-chevron-up"></i></button>
 
 		<!-- External js -->
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script>
