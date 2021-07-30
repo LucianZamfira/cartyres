@@ -188,36 +188,14 @@ $alert-paddings: 1rem 1.2rem; //@at-root
 $alert-border-radius: 0; //@at-root
 
 // Animations
-@keyframes rotation {
+@keyframes pulse {
 	from {
-		transform: rotate(0deg);
+		transform: translateX(50%) scale(1);
 	}
 	to {
-		transform: rotate(359deg);
+		transform: translateX(50%) scale(1.1);
 	}
 }
-
-// @keyframes fadeInMenu {
-// 	0% {
-// 		visibility: hidden;
-// 		transform: translate3d(100%, 0, 0);
-// 	}
-// 	to {
-// 		transform: translate3d(0, 0, 0);
-// 		visibility: visible;
-// 	}
-// }
-
-// @keyframes fadeOutMenu {
-// 	0% {
-// 		visibility: visible;
-// 		transform: translate3d(0, 0, 0);
-// 	}
-// 	to {
-// 		transform: translate3d(100%, 0, 0);
-// 		visibility: hidden;
-// 	}
-// }
 
 @keyframes fadeInAnimation {
 	0% {

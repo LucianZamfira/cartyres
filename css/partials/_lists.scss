@@ -452,13 +452,7 @@ ol {
 
 // Tablets/Laptops
 @media (max-width: 991px) {
-	.list {
-		&--cities {
-			> li {
-				flex-basis: 50%;
-			}
-		}
-
+	/* .list {
 		&--steps {
 			flex-direction: column;
 
@@ -486,41 +480,44 @@ ol {
 				}
 			}
 		}
-	}
+	} */
 }
 
 // Tablets/Laptops
 @media (min-width: 768px) {
-	.locations {
-		&-widget {
-			&.vertical {
-				bottom: 0;
-				flex-direction: column;
-				font-size: 1.125em;
-				padding-right: 2rem;
-				position: absolute;
-				right: 0;
-				text-align: right;
-				top: 0;
-
-				li {
-					&:before {
-						top: 50%;
-						left: 100%;
-						transform: translate3d(12px, -50%, 0);
-					}
-				}
-			}
-		}
-	}
 }
 
 // Mobiles
 @media (max-width: 767px) {
-	.locations {
-		&-widget {
-			padding-top: 4rem;
-			padding-bottom: 1rem;
+	.list {
+		&--steps {
+			flex-direction: column;
+
+			> li {
+				padding: 0;
+				margin: 0;
+
+				.badge {
+					&:before {
+						display: none;
+					}
+				}
+
+				+ li {
+					padding-top: 6rem;
+
+					.badge {
+						&:after {
+							content: "\e936";
+							right: 50%;
+							top: 2rem;
+							transform: translateX(50%);
+
+							animation: pulse 2s linear infinite normal forwards;
+						}
+					}
+				}
+			}
 		}
 	}
 }

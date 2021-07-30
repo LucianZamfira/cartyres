@@ -471,6 +471,11 @@ main {
 
 // Laptops
 @media (max-width: 991px) {
+	.content {
+		&--hero {
+			max-width: 70%;
+		}
+	}
 }
 
 // Tablets

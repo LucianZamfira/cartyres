@@ -202,3 +202,14 @@ button,
 		grid-gap: 1rem;
 	}
 }
+
+// Mobiles
+@media (max-width: 575px) {
+	.button {
+		width: 100%;
+
+		+ [class*="button"] {
+			margin-top: 1.2rem;
+		}
+	}
+}
