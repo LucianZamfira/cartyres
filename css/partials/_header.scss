@@ -98,7 +98,7 @@ header {
 		cursor: initial;
 		color: $primary-text-color;
 		left: 50%;
-		min-width: 180px;
+		min-width: 200px;
 		opacity: 0;
 		padding: 1rem;
 		pointer-events: none;
@@ -202,6 +202,10 @@ header {
 					z-index: 2;
 				}
 			}
+
+			&:last-child {
+				display: none;
+			}
 		}
 
 		i {
@@ -225,35 +229,6 @@ header {
 			}
 		}
 	}
-
-	// &-aside {
-	// 	background-color: $white;
-	// 	bottom: 0;
-	// 	color: $primary-text-color;
-	// 	display: flex;
-	// 	flex-direction: column;
-	// 	justify-content: space-between;
-	// 	min-width: 380px;
-	// 	padding: 4rem;
-	// 	position: fixed;
-	// 	right: 0;
-	// 	top: 0;
-	// 	transform: translate3d(100%, 0, 0);
-	// 	transition: transform 0.2s ease-in-out;
-	// 	visibility: hidden;
-	// 	z-index: 10;
-
-	// 	.link {
-	// 		font-size: 1.4em;
-	// 		font-weight: 600;
-	// 		margin: 0.6rem 0;
-	// 	}
-
-	// 	.headline {
-	// 		font-size: 18px;
-	// 		margin-bottom: 0.5rem;
-	// 	}
-	// }
 
 	&-main {
 		display: flex;

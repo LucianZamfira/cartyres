@@ -1,13 +1,19 @@
 [class*="card"] {
 	background-color: $white;
 	border-radius: $card-border-radius;
+	border: 1px solid $card-border-color;
 	padding: $card-padding;
 }
 
 .card {
 	&:hover,
 	&.shadow {
-		box-shadow: 0 0 18px rgba($black, 0.15);
+		// box-shadow: 0 0 18px rgba($black, 0.15);
+		box-shadow: 0 0 18px rgba($inverted-color, 0.15);
+	}
+
+	&.unstyled {
+		border-color: transparent;
 	}
 
 	.headline {

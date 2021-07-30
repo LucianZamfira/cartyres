@@ -26,11 +26,6 @@ ol {
 	margin: 0;
 	padding: 0;
 
-	// > li {
-	// 	padding: 0;
-	// 	margin: 0;
-	// }
-
 	&::-webkit-scrollbar {
 		width: 5px;
 
@@ -42,6 +37,68 @@ ol {
 			background-color: $secondary-color;
 			border-radius: 8px;
 			padding-right: 3px;
+		}
+	}
+
+	> li {
+		// padding: 0;
+		// margin: 0;
+
+		&.error,
+		&.success,
+		&.pending {
+			color: rgba($primary-color, 0.6);
+
+			&:before {
+				content: "s";
+				font-family: "icons";
+				left: 0;
+				position: absolute;
+				top: 2px;
+				font-size: 20px;
+				line-height: 1;
+				display: block;
+			}
+		}
+
+		&.success {
+			color: $primary-color;
+
+			&:before {
+				content: "\e919";
+			}
+		}
+
+		&.error {
+			color: $red;
+
+			&:before {
+				content: "\e91f";
+			}
+		}
+
+		&.pending {
+			color: rgba($primary-color, 0.6);
+
+			&:before {
+				animation: 2s spin linear infinite;
+				content: "\e949";
+			}
+		}
+
+		&.disabled {
+			color: rgba($primary-text-color, 0.5);
+		}
+	}
+
+	&--loading {
+		> li {
+			padding-left: 2rem;
+			position: relative;
+
+			+ li {
+				margin-top: 0.8rem;
+			}
 		}
 	}
 

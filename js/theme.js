@@ -86,7 +86,7 @@ $(document).ready(function () {
 	});
 
 	// Init toast start
-	$('.button--toast').on('click', function (event) {
+	$('.show-toast').on('click', function (event) {
 		event.preventDefault();
 
 		$('#defaultToast').toast('show');
@@ -152,6 +152,12 @@ $(document).ready(function () {
 	// document.addEventListener('scroll', onScroll);
 	// document.addEventListener('touchmove', onScroll);
 	// Sticky menu end
+
+	// Cancel search action
+	$('.cancel-search').on('click', function (event) {
+		event.preventDefault();
+		$('body').removeClass('loading');
+	});
 
 	// Init burger menu action
 	$('.menu-toggle').on('click', function () {

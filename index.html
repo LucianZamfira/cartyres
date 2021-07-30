@@ -56,8 +56,8 @@
 						<ul class="submenu">
 							<li><a href="about-us.html" title="About us" class="link">About us</a></li>
 							<li><a href="blog.html" title="Blog" class="link">Blog</a></li>
-							<li><a href="#" title="Flew easy anyway" class="link">Flew easy anyway</a></li>
-							<li><a href="#" title="Tyre Retailers" class="link">Tyre Retailers</a></li>
+							<li><a href="#" title="Show successful toast" class="link show-toast">Show successful toast</a></li>
+							<li><a href="#" title="Open modal" class="link" data-bs-toggle="modal" data-bs-target="#defaultModal">Open modal</a></li>
 							<li><a href="#" title="Tyre Manufacturers" class="link">Tyre Manufacturers</a></li>
 						</ul>
 					</li>
@@ -77,40 +77,13 @@
 					<li>
 						<a href="savings.html" title="Savings" class="trigger">Savings</a>
 					</li>
+
+					<li>
+						<button class="menu-close"><i class="icon-close"></i></button>
+					</li>
 				</ul>
 
-				<!-- <div class="menu-aside">
-					<nav>
-						<a href="index.html" title="Homepage" class="link">Homepage</a>
-						<a href="about-us.html" title="About us" class="link">About us</a>
-						<a href="blog.html" title="Blog" class="link active">Blog</a>
-						<a href="favorites.html" title="Favorites" class="link">Favorites</a>
-						<a href="account.html" title="Account" class="link">Account</a>
-						<a href="contact.html" title="Contact" class="link">Contact</a>
-					</nav>
-
-					<div class="social-widget">
-						<h3 class="headline">Follow Us On Social</h3>
-
-						<ul class="list social-list">
-							<li>
-								<a href="https://twitter.com" target="_blank" title="" data-toggle="tooltip" data-placement="top" rel="noopener" data-original-title="Find us on Twitter"><i class="icon-twitter-circle"></i></a>
-							</li>
-
-							<li>
-								<a href="https://facebook.com" target="_blank" title="" data-toggle="tooltip" data-placement="top" rel="noopener" data-original-title="Find us on Facebook"><i class="icon-facebook-circle"></i></a>
-							</li>
-
-							<li>
-								<a href="https://instagram.com" target="_blank" title="" data-toggle="tooltip" data-placement="top" rel="noopener" data-original-title="Find us on Instagram"><i class="icon-instagram-circle"></i></a>
-							</li>
-						</ul>
-					</div>
-
-					<button class="menu-close"><i class="icon-close"></i></button>
-				</div>
-
-				<button class="trigger menu-toggle" title="Open navigation menu" aria-label="Open navigation menu"><i class="icon-menu"></i></button> -->
+				<button class="trigger menu-toggle" title="Open navigation menu" aria-label="Open navigation menu"><i class="icon-menu"></i></button>
 			</div>
 		</header>
 		<!-- Header end -->
@@ -153,18 +126,9 @@
 							</div>
 
 							<div class="input-actions text-right">
-								<a href="results.html" title="Start comparing" class="button button--regular button--primary">Start comparing</a>
+								<a href="results.html" title="Start comparing" class="button button--regular button--white">Start comparing</a>
 							</div>
 						</form>
-
-						<!-- <ul class="list--inline mt-4">
-							<li>
-								<button class="button--primary button--toast" data-toggle="tooltip" data-bs-placement="top" title="Show toast" aria-label="Show toast"><i class="icon-heart"></i></button>
-							</li>
-							<li>
-								<button class="button--primary" data-bs-toggle="modal" data-bs-target="#defaultModal" data-toggle="tooltip" data-bs-placement="top" title="Quick view"><i class="icon-eye"></i></button>
-							</li>
-						</ul> -->
 					</div>
 				</div>
 
@@ -265,8 +229,56 @@
 				<div class="container">
 					<h2>We find the best deals on Tyres every day to save you money</h2>
 
-					<div class="carousels my-5">
-						<div class="card shadow">
+					<div class="carousel-bigCards my-3 pb-3 owl--carousel carousel" data-options='{"dots": true, "loop": false, "autoHeight": true, "nav": false, "autoplay": true, "autoplayHoverPause": true, "smartSpeed": 400, "responsive": {}}'>
+						<div class="card">
+							<div class="row align-items-center">
+								<div class="col-4 col-sm-12">
+									<h3>Ford Driver savings</h3>
+									<p>Here at TyreSpy we bring you the lowest priced car tyres available and yes, our prices include the fitting, old tyre disposal, replacement valves, wheel balancing and VAT. We make sure that we are the cheapest online all day.</p>
+									<a href="#" title="See all savings" class="button">See all savings</a>
+								</div>
+
+								<div class="col-4 col-sm-12">
+									<div class="card--background card--green inner-effect">
+										<h3 class="title">£61.45</h3>
+										<p>Money saved by</p>
+
+										<picture class="picture">
+											<!-- Webp modern browsers -->
+											<source type="image/webp" media="(min-width: 769px)" srcset="images/sections/tyre-default.webp" />
+											<source type="image/webp" media="(max-width: 768px)" srcset="images/sections/tyre-mobile.webp" />
+
+											<!-- Jpeg fallback -->
+											<source type="" media="(min-width: 769px)" srcset="images/sections/tyre-default.jpg" />
+											<source type="" media="(max-width: 768px)" srcset="images/sections/tyre-mobile.jpg" />
+
+											<img alt="Hero image" aria-hidden="true" src="images/sections/tyre-default.jpg" />
+										</picture>
+									</div>
+								</div>
+
+								<div class="col-4 col-sm-12">
+									<div class="card--background card--green inner-effect">
+										<h3 class="title">£61.45</h3>
+										<p>Money saved by</p>
+
+										<picture class="picture">
+											<!-- Webp modern browsers -->
+											<source type="image/webp" media="(min-width: 769px)" srcset="images/sections/tyre-default.webp" />
+											<source type="image/webp" media="(max-width: 768px)" srcset="images/sections/tyre-mobile.webp" />
+
+											<!-- Jpeg fallback -->
+											<source type="" media="(min-width: 769px)" srcset="images/sections/tyre-default.jpg" />
+											<source type="" media="(max-width: 768px)" srcset="images/sections/tyre-mobile.jpg" />
+
+											<img alt="Hero image" aria-hidden="true" src="images/sections/tyre-default.jpg" />
+										</picture>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
 							<div class="row align-items-center">
 								<div class="col-4 col-sm-12">
 									<h3>Ford Driver savings</h3>
