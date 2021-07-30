@@ -320,7 +320,8 @@ ol {
 		}
 
 		p {
-			margin: 0;
+			margin: 0 auto;
+			max-width: 380px;
 		}
 	}
 }
@@ -459,7 +460,31 @@ ol {
 		}
 
 		&--steps {
-			display: none;
+			flex-direction: column;
+
+			> li {
+				padding: 0;
+				margin: 0;
+
+				.badge {
+					&:before {
+						display: none;
+					}
+				}
+
+				+ li {
+					padding-top: 4rem;
+
+					.badge {
+						&:after {
+							content: "\e936";
+							right: 50%;
+							top: 1rem;
+							transform: translateX(50%);
+						}
+					}
+				}
+			}
 		}
 	}
 }
