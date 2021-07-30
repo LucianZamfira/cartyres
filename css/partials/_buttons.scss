@@ -102,7 +102,7 @@ button,
 	&--secondary {
 		background-color: $secondary-button-color;
 		border-color: $secondary-button-border-color;
-		color: $black;
+		color: $primary-color;
 
 		&:hover {
 			background-color: $secondary-button-color-hover;
