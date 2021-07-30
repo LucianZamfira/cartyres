@@ -1,6 +1,6 @@
 section {
 	display: block;
-	padding: 0 0 $section-paddings 0;
+	padding-bottom: $section-paddings;
 	position: relative;
 
 	&[class*="section--"] {
@@ -39,7 +39,7 @@ section {
 	}
 
 	&--half {
-		padding: 0;
+		padding: 0 !important;
 
 		article {
 			color: $white;
@@ -436,7 +436,7 @@ section {
 // Mobiles
 @media (max-width: 659px) {
 	section {
-		padding: 2rem 0;
+		padding-bottom: 2rem;
 
 		&[class*="section--"] {
 			padding-top: 2rem;
