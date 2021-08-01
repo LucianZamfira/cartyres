@@ -128,6 +128,13 @@ header {
 		.active {
 			font-weight: 500;
 		}
+
+		&.savings {
+			left: auto;
+			right: 0;
+			transform: none;
+			min-width: 420px;
+		}
 	}
 }
 
@@ -218,7 +225,8 @@ header {
 			border: medium none;
 			color: inherit;
 			display: inline-flex;
-			padding: 0.8rem;
+			// padding: 0.8rem;
+			padding: 1.2rem 0.8rem;
 			text-decoration: none;
 
 			&:hover,
