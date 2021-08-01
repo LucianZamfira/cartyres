@@ -93,7 +93,7 @@ section {
 	}
 
 	&--top {
-		padding: 0 1rem;
+		padding: 0 !important;
 		position: relative;
 
 		h1 {
@@ -112,7 +112,6 @@ section {
 			align-items: center;
 			display: flex;
 			justify-content: center;
-			max-width: $container-hero-max-width;
 			min-height: 28vh;
 			padding-bottom: 6rem;
 			padding-top: 6rem;
