@@ -6,14 +6,14 @@
 	padding-left: 0;
 
 	&-tabs {
-		font-size: 1.1875em;
+		border-bottom: 1px solid $border-color;
 
 		.nav {
 			&-item {
 				margin: 0;
 				flex: 1;
 
-				button {
+				/* button {
 					background-color: rgba($primary-color, 0.6);
 					border-color: rgba($primary-color, 0.6);
 					border-bottom: none;
@@ -32,18 +32,41 @@
 						border-color: $primary-color;
 						color: $primary-color;
 					}
+				} */
+
+				// &:first-child {
+				// 	button {
+				// 		border-top-left-radius: $border-radius;
+				// 	}
+				// }
+
+				// &:last-child {
+				// 	button {
+				// 		border-top-right-radius: $border-radius;
+				// 	}
+				// }
+			}
+
+			&-link {
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+				border-top-left-radius: 0.25rem;
+				border-top-right-radius: 0.25rem;
+				border: 1px solid transparent;
+				font-weight: 600;
+				margin-bottom: -1px;
+				width: 100%;
+
+				&:hover {
+					background-color: lighten($sky, 5%);
+					border-bottom-color: $border-color;
+					color: $black;
 				}
 
-				&:first-child {
-					button {
-						border-top-left-radius: $border-radius;
-					}
-				}
-
-				&:last-child {
-					button {
-						border-top-right-radius: $border-radius;
-					}
+				&.active {
+					border-color: $border-color $border-color $white;
+					color: $primary-text-color;
+					pointer-events: none;
 				}
 			}
 		}
@@ -51,7 +74,29 @@
 }
 
 .tab {
-	&s {
+	&-content {
+		border: 1px solid $border-color;
+		border-top: none;
+		border-radius: 0 0 0.25rem 0.25rem;
+		text-align: initial;
+		padding: 1.2rem;
+
+		&.unstyled {
+			border-radius: unset;
+			border: medium none;
+			padding: 0;
+		}
+
+		> .tab-pane {
+			display: none;
+		}
+
+		> .active {
+			display: block;
+		}
+	}
+
+	/* &s {
 		&--widget {
 			display: flex;
 			margin-bottom: 1rem;
@@ -83,27 +128,8 @@
 			}
 		}
 
-		&-content {
-			border: 1px solid $primary-color;
-			border-radius: 0 0 $border-radius $border-radius;
-			text-align: initial;
-			padding: 1.2rem;
-
-			&.unstyled {
-				border-radius: unset;
-				border: medium none;
-				padding: 0;
-			}
-
-			> .tab-pane {
-				display: none;
-			}
-
-			> .active {
-				display: block;
-			}
-		}
-	}
+		
+	} */
 }
 
 .fade {

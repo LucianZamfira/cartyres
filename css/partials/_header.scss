@@ -106,7 +106,8 @@ header {
 		margin-top: 20px;
 		top: 100%;
 		transform: translateX(-50%);
-		transition: margin-top 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.2s ease-in-out;
+		// transition: margin-top 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.1s ease-in-out;
+		transition: margin-top 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 		visibility: hidden;
 		z-index: -1;
 
@@ -125,15 +126,18 @@ header {
 			}
 		}
 
-		.active {
-			font-weight: 500;
+		.link {
+			&.active {
+				color: $primary-color;
+				font-weight: 500;
+			}
 		}
 
 		&.savings {
 			left: auto;
 			right: 0;
 			transform: none;
-			min-width: 420px;
+			min-width: 520px;
 		}
 	}
 }
@@ -199,6 +203,7 @@ header {
 			margin-left: 0.5rem;
 			position: relative;
 
+			&.active,
 			&:hover {
 				.submenu {
 					margin-top: 0;

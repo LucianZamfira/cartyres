@@ -51,13 +51,13 @@
 
 				<ul class="menu-top">
 					<li>
-						<a href="about-us.html" title="What we do" class="trigger active">What we do</a>
+						<a href="about-us.html" title="What we do" class="trigger">What we do</a>
 
 						<ul class="submenu">
 							<li><a href="about-us.html" title="About us" class="link">About us</a></li>
 							<li><a href="blog.html" title="Blog" class="link active">Blog</a></li>
-							<li><a href="#" title="Flew easy anyway" class="link">Flew easy anyway</a></li>
-							<li><a href="#" title="Tyre Retailers" class="link">Tyre Retailers</a></li>
+							<li><a href="#" title="Show successful toast" class="link show-toast">Show successful toast</a></li>
+							<li><a href="#" title="Open modal" class="link" data-bs-toggle="modal" data-bs-target="#defaultModal">Open modal</a></li>
 							<li><a href="#" title="Tyre Manufacturers" class="link">Tyre Manufacturers</a></li>
 						</ul>
 					</li>
@@ -76,8 +76,63 @@
 
 					<li>
 						<a href="savings.html" title="Savings" class="trigger">Savings</a>
+
+						<div class="submenu savings">
+							<ul class="nav nav-tabs" id="savingsTab" role="tablist">
+								<li class="nav-item" role="presentation">
+									<button class="nav-link active" id="tyreBrand-tab" data-bs-toggle="tab" data-bs-target="#tyreBrand" type="button" role="tab" aria-controls="tyreBrand" aria-selected="true">By tyre brand</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button class="nav-link" id="carBrand-tab" data-bs-toggle="tab" data-bs-target="#carBrand" type="button" role="tab" aria-controls="carBrand" aria-selected="false">By car make</button>
+								</li>
+							</ul>
+
+							<div class="tab-content" id="savingsTabContent">
+								<div class="tab-pane fade show active" id="tyreBrand" role="tabpanel" aria-labelledby="tyreBrand-tab">
+									<ul class="list columns-3">
+										<li><a href="#" title="Michelin" class="link">Michelin</a></li>
+										<li><a href="#" title="Continental" class="link">Continental</a></li>
+										<li><a href="#" title="Pirelli" class="link">Pirelli</a></li>
+										<li><a href="#" title="Goodyear" class="link">Goodyear</a></li>
+										<li><a href="#" title="Monumental" class="link">Monumental</a></li>
+										<li><a href="#" title="Dunlop" class="link">Dunlop</a></li>
+										<li><a href="#" title="Hankook" class="link">Hankook</a></li>
+										<li><a href="#" title="Sailun" class="link">Sailun</a></li>
+										<li><a href="#" title="Tigar" class="link">Tigar</a></li>
+										<li><a href="#" title="Aoteli" class="link">Aoteli</a></li>
+										<li><a href="#" title="Rovelo" class="link">Rovelo</a></li>
+										<li><a href="#" title="Firestone" class="link">Firestone</a></li>
+										<li><a href="#" title="Uniroyal" class="link">Uniroyal</a></li>
+									</ul>
+								</div>
+
+								<div class="tab-pane fade" id="carBrand" role="tabpanel" aria-labelledby="carBrand-tab">
+									<ul class="list columns-3">
+										<li><a href="#" title="Audi" class="link">Audi</a></li>
+										<li><a href="#" title="Skoda" class="link">Skoda</a></li>
+										<li><a href="#" title="Renault" class="link">Renault</a></li>
+										<li><a href="#" title="Dacia" class="link">Dacia</a></li>
+										<li><a href="#" title="Ford" class="link">Ford</a></li>
+										<li><a href="#" title="Opel" class="link">Opel</a></li>
+										<li><a href="#" title="Jeep" class="link">Jeep</a></li>
+										<li><a href="#" title="BMW" class="link">BMW</a></li>
+										<li><a href="#" title="Alfa Romeo" class="link">Alfa Romeo</a></li>
+										<li><a href="#" title="Chevrolet" class="link">Chevrolet</a></li>
+										<li><a href="#" title="Volkswagen" class="link">Volkswagen</a></li>
+										<li><a href="#" title="Bentley" class="link">Bentley</a></li>
+										<li><a href="#" title="Hyundai" class="link">Hyundai</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<button class="menu-close"><i class="icon-close"></i></button>
 					</li>
 				</ul>
+
+				<button class="trigger menu-toggle" title="Open navigation menu" aria-label="Open navigation menu"><i class="icon-menu"></i></button>
 			</div>
 		</header>
 		<!-- Header end -->
