@@ -7,11 +7,11 @@ $inverted-color: #8ab2ff; //@at-root
 // General colors
 $transparent: transparent;
 $white: #ffffff;
+$light: #fafafa;
 $black: #333333;
 $dark: #5d5d5d;
 $cream: #f5f5f5;
 $indigo: #525199;
-// $sky: #8796b2;
 $sky: #e0ebf5;
 $gray: #bababa;
 $fuchsia: #ab0066;
@@ -81,7 +81,6 @@ $section-title-margin: 4rem; //@at-root
 $section-title-lineheight: 1.6; //@at-root
 
 // Footer
-$footer-paddings: 4.2rem; //@at-root
 $footer-background-color: $secondary-color; //@at-root
 
 // Content
@@ -167,7 +166,8 @@ $badge-primary-color: $primary-color;
 $badge-secondary-color: $secondary-color;
 $badge-danger-color: #c51c1c;
 $badge-success-color: #269c36;
-$badge-warning-color: #ffc107;
+$badge-warning-color: #ff7707;
+$badge-yellow-color: #ffd452;
 $badge-info-color: #0d7dc0;
 $badge-light-color: #f5f5f5;
 $badge-dark-color: #1b1b1b;

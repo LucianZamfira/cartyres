@@ -17,7 +17,7 @@ ol {
 	}
 }
 
-[class*="list"] {
+[class^="list"] {
 	display: block;
 	line-height: 1.4;
 	list-style: none;
@@ -168,11 +168,21 @@ ol {
 		}
 	}
 
-	&__item {
+	&--badges {
+		display: flex;
+		flex-flow: row wrap;
+		width: 100%;
+
+		> li {
+			margin: 0.6rem 1.2rem 0.6rem 0;
+		}
+	}
+
+	/* &__item {
 		-moz-osx-font-smoothing: grayscale;
 		-webkit-font-smoothing: antialiased;
 		margin-bottom: 8px;
-	}
+	} */
 
 	&--lines {
 		li {

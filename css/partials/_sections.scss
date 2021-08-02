@@ -14,7 +14,7 @@ section {
 
 .section {
 	&--aside {
-		padding: 0;
+		padding: 0 !important;
 	}
 
 	&--secondary {
@@ -120,12 +120,7 @@ section {
 	}
 
 	&--overlap {
-		padding-top: 0 !important;
-
-		.element {
-			margin-top: -4rem;
-			margin-bottom: 4rem;
-		}
+		padding: 0 !important;
 	}
 
 	&--sky {
@@ -199,8 +194,7 @@ section {
 
 	&--breadcrumbs {
 		background-color: $cream;
-		padding-top: 1rem;
-		padding-bottom: 1rem;
+		padding: 1rem 0 !important;
 	}
 
 	&--cream {

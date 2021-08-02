@@ -387,7 +387,14 @@ main {
 
 	&-bottom {
 		margin-top: 4rem;
-		margin-bottom: -4rem;
+		margin-bottom: -3rem;
+	}
+}
+
+.offset {
+	&-bottom {
+		margin-top: -50px;
+		transform: translateY(100%);
 	}
 }
 

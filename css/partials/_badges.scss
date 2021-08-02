@@ -1,32 +1,36 @@
-.badge {
+[class^="badge"] {
 	background-color: rgba($badge-primary-color, 0.1);
 	border-radius: $badge-border-radius;
-	// border: 1px solid $badge-primary-color;
 	color: $primary-color;
-	display: inline-block;
-	// font-size: 0.875em;
-	font-size: 0.938em;
-	font-weight: 600;
-	font-family: Arial, Helvetica, sans-serif;
-	line-height: 1.4;
-	padding: 4px 12px;
+	display: inline-flex;
+	padding: 0.6rem 1.2rem;
 	text-decoration: none;
 	transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
 
 	&:hover {
-		background-color: darken($badge-primary-color, 10%);
-		color: $white;
+		background-color: $sky;
+		color: $primary-color;
 		text-decoration: none;
 	}
 
+	&.active {
+		background-color: $primary-color;
+		color: $white;
+	}
+}
+
+.badge {
+	font-size: 0.938em;
+	font-weight: 600;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.4;
+
 	&--primary {
 		background-color: rgba($badge-primary-color, 0.1);
-		// border-color: $badge-primary-color;
 	}
 
 	&--secondary {
 		background-color: rgba($badge-secondary-color, 0.1);
-		// border-color: $badge-secondary-color;
 
 		&:hover {
 			background-color: darken($badge-secondary-color, 10%);
@@ -34,24 +38,18 @@
 	}
 
 	&--danger {
-		// border-color: $badge-danger-color;
-
 		&:hover {
 			background-color: darken($badge-danger-color, 10%);
 		}
 	}
 
 	&--success {
-		// border-color: $badge-success-color;
-
 		&:hover {
 			background-color: darken($badge-success-color, 10%);
 		}
 	}
 
 	&--warning {
-		// border-color: $badge-warning-color;
-
 		&:hover {
 			background-color: darken($badge-warning-color, 10%);
 		}
@@ -59,15 +57,24 @@
 
 	&--info {
 		background-color: rgba($badge-info-color, 0.1);
-		// border-color: $badge-info-color;
 
 		&:hover {
 			background-color: darken($badge-info-color, 10%);
 		}
 	}
 
+	&--yellow {
+		background-color: $badge-yellow-color;
+		color: $black;
+
+		&:hover {
+			background-color: darken($badge-yellow-color, 10%);
+			color: $primary-text-color;
+		}
+	}
+
 	&--light {
-		// border-color: $badge-light-color;
+		background-color: $badge-light-color;
 		color: $primary-text-color;
 
 		&:hover {
@@ -77,7 +84,7 @@
 	}
 
 	&--dark {
-		// border-color: $badge-dark-color;
+		background-color: $badge-dark-color;
 
 		&:hover {
 			background-color: darken($badge-dark-color, 10%);
@@ -85,11 +92,11 @@
 	}
 
 	&--gray {
-		// border-color: $badge-gray-color;
-		color: $primary-color;
+		background-color: $badge-gray-color;
+		color: $primary-text-color;
 
 		&:hover {
-			background-color: darken($badge-gray-color, 10%);
+			background-color: $sky;
 			color: $primary-color;
 		}
 	}
