@@ -18,8 +18,7 @@ ol {
 }
 
 [class*="list"] {
-	display: flex;
-	// flex-direction: column;
+	display: block;
 	line-height: 1.4;
 	list-style: none;
 	margin: 0;
@@ -127,7 +126,6 @@ ol {
 
 	&--inline,
 	&--comma {
-		// flex-direction: row;
 		margin: 0;
 		padding: 0;
 
@@ -161,6 +159,7 @@ ol {
 	}
 
 	&--flex {
+		display: flex;
 		flex-flow: row wrap;
 		width: 100%;
 
