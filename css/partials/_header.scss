@@ -134,10 +134,12 @@ header {
 		}
 
 		&.savings {
+			border: medium none;
 			left: auto;
 			right: 0;
 			transform: none;
 			min-width: 520px;
+			padding: 0;
 		}
 	}
 }

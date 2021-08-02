@@ -41,7 +41,7 @@
 		border-color: $border-color;
 		color: $primary-text-color;
 		display: flex;
-		padding: 0.8rem 1.5rem;
+		padding: 0.8rem 1.2rem;
 		position: relative;
 		text-align: left;
 		transition: background-color 0.2s ease-in-out;
@@ -85,7 +85,7 @@
 
 	&-header {
 		margin-bottom: 0;
-		font-size: 1.375em;
+		font-size: 1.125em;
 	}
 
 	&-item {
@@ -140,4 +140,12 @@
 			}
 		}
 	} */
+}
+
+@media (min-width: 991px) {
+	.accordion {
+		&-header {
+			font-size: 1.225em;
+		}
+	}
 }
