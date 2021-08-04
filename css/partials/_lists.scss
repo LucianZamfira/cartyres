@@ -591,5 +591,19 @@ ol {
 				}
 			}
 		}
+
+		&--results {
+			> li {
+				width: 33.33%;
+
+				&:first-child {
+					border-bottom-left-radius: 0;
+				}
+
+				&:last-child {
+					border-bottom-right-radius: 0;
+				}
+			}
+		}
 	}
 }

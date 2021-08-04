@@ -26,18 +26,6 @@
 
 		.accordion {
 			&-header {
-				display: flex;
-				font-weight: 400;
-				font-size: 1.125em;
-
-				.image {
-					border-radius: $border-radius;
-				}
-
-				p {
-					margin: 0;
-				}
-
 				&:not(.collapsed) {
 					.icon-chevron-down {
 						&:before {

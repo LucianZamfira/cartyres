@@ -1,0 +1,49 @@
+.tyre {
+	&-header {
+		display: flex;
+		font-weight: 400;
+		font-size: 1.125em;
+
+		.group {
+			align-items: center;
+			display: flex;
+			flex-flow: row wrap;
+			flex: 1;
+			padding: 1rem;
+		}
+
+		p {
+			margin: 0;
+		}
+	}
+
+	&-info {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 2rem 0;
+
+		.middle {
+			padding: 0 3rem;
+		}
+	}
+}
+
+// Mobiles/Tablets
+@media (max-width: 767px) {
+	.tyre {
+		&-header,
+		&-info {
+			align-items: center;
+			flex-direction: column;
+		}
+
+		&-info {
+			padding: 1rem 0;
+
+			.middle {
+				padding: 1rem 0;
+			}
+		}
+	}
+}
