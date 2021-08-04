@@ -19,6 +19,50 @@
 } */
 
 .accordion {
+	&-card {
+		border: 1px solid $border-color;
+		border-radius: $border-radius;
+		box-shadow: 0 4px 12px rgba($black, 0.2);
+
+		.accordion {
+			&-header {
+				display: flex;
+				font-weight: 400;
+				font-size: 1.125em;
+
+				.image {
+					border-radius: $border-radius;
+				}
+
+				p {
+					margin: 0;
+				}
+
+				&:not(.collapsed) {
+					.icon-chevron-down {
+						&:before {
+							content: "\e937";
+						}
+					}
+				}
+			}
+
+			&-body {
+				background-color: $white;
+				color: initial;
+				padding: 1rem;
+
+				hr {
+					background-color: $border-color;
+				}
+			}
+
+			&-collapse {
+				transform: none;
+			}
+		}
+	}
+
 	&-collapse {
 		transform: translateY(-0.8rem);
 	}

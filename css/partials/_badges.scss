@@ -85,9 +85,41 @@
 
 	&--dark {
 		background-color: $badge-dark-color;
+		color: $white;
 
 		&:hover {
 			background-color: darken($badge-dark-color, 10%);
+			color: $white;
+		}
+	}
+
+	&--orange {
+		background-color: $badge-orange-color;
+		color: $white;
+
+		&:hover {
+			background-color: darken($badge-orange-color, 10%);
+			color: $white;
+		}
+	}
+
+	&--green {
+		background-color: $badge-green-color;
+		color: $white;
+
+		&:hover {
+			background-color: darken($badge-green-color, 10%);
+			color: $white;
+		}
+	}
+
+	&--black {
+		background-color: $badge-dark-color;
+		color: $white;
+
+		&:hover {
+			background-color: darken($badge-dark-color, 10%);
+			color: $white;
 		}
 	}
 
