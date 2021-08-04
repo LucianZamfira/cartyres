@@ -53,6 +53,7 @@
 				border-top-left-radius: 0.4rem;
 				border-top-right-radius: 0.4rem;
 				border: 1px solid transparent;
+				color: $primary-text-color;
 				font-weight: 600;
 				margin-bottom: -1px;
 				width: 100%;
@@ -65,7 +66,7 @@
 
 				&.active {
 					border-color: $border-color $border-color $white;
-					color: $primary-text-color;
+					color: $primary-color;
 					pointer-events: none;
 				}
 			}
