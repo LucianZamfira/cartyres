@@ -46,7 +46,7 @@ $(document).ready(function () {
 	}
 
 	// Init Bootstrap modal
-	// $('#searchModal').modal('show');
+	$('#searchModal').modal('show');
 
 	// Init Bootstrap tooltips
 	if (window.innerWidth > 767) {
