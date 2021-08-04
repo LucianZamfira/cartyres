@@ -196,6 +196,21 @@ button,
 		}
 	}
 
+	&--collaps {
+		font-size: 1.125em;
+		border: medium none;
+		color: $primary-text-color;
+		line-height: 1;
+		font-weight: 500;
+		min-width: auto;
+		padding: 0.2rem;
+
+		&:hover {
+			background-color: transparent;
+			color: $primary-color;
+		}
+	}
+
 	&-group {
 		display: flex;
 		flex-flow: row wrap;
