@@ -325,9 +325,13 @@ main {
 	}
 
 	.overlap {
+		&-top,
+		&-bottom {
+			margin-bottom: 2rem;
+		}
+
 		&-bottom {
 			margin-top: 2rem;
-			margin-bottom: 2rem;
 		}
 	}
 }

@@ -1,4 +1,12 @@
 .tyre {
+	&-results {
+		align-items: center;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		margin-bottom: 2rem;
+	}
+
 	&-header {
 		display: flex;
 		font-weight: 400;

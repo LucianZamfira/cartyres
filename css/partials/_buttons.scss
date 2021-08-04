@@ -53,6 +53,10 @@ button,
 }
 
 .button {
+	&--mobile {
+		width: 100%;
+	}
+
 	&--medium {
 		font-size: 0.95em;
 		padding-top: 14px;
