@@ -4,7 +4,7 @@
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
-		margin-bottom: 2rem;
+		// margin-bottom: 2rem;
 	}
 
 	&-header {
@@ -41,6 +41,17 @@
 		.middle {
 			padding: 0 3rem;
 		}
+
+		.list--sizes {
+			margin-right: 0.6rem;
+			margin-left: 0.6rem;
+			margin-bottom: 0.8rem;
+		}
+
+		hr {
+			margin-right: 0.6rem;
+			margin-left: 0.6rem;
+		}
 	}
 }
 
@@ -64,6 +75,10 @@
 					padding-top: 1rem;
 					flex: 0 0 100%;
 				}
+			}
+
+			.group {
+				width: 100%;
 			}
 		}
 

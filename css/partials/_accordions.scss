@@ -196,9 +196,19 @@
 			justify-content: center;
 		}
 
-		&-item {
+		&-button {
+			&:after {
+				font-size: 16px;
+			}
+		}
+
+		&-card {
 			padding-bottom: 50px;
 			position: relative;
+		}
+
+		&-body {
+			padding: 1rem;
 		}
 
 		&-toggle {
