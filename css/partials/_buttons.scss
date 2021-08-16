@@ -53,9 +53,9 @@ button,
 }
 
 .button {
-	&--mobile {
-		width: 100%;
-	}
+	// &--mobile {
+	// 	width: 100%;
+	// }
 
 	&--medium {
 		font-size: 0.95em;
@@ -219,6 +219,15 @@ button,
 		display: flex;
 		flex-flow: row wrap;
 		grid-gap: 1rem;
+	}
+}
+
+// Mobiles/Tablets
+@media (max-width: 767px) {
+	.button {
+		&--mobile {
+			width: 100%;
+		}
 	}
 }
 
