@@ -607,3 +607,15 @@ ol {
 		}
 	}
 }
+
+// Small Mobiles
+@media (max-width: 567px) {
+	.list {
+		&--results {
+			> li {
+				width: 50%;
+				flex: 1 0 auto;
+			}
+		}
+	}
+}

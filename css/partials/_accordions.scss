@@ -19,6 +19,11 @@
 } */
 
 .accordion {
+	&-media {
+		// background-image: url("../images/asfalt-light.png");
+		background-image: url("https://www.transparenttextures.com/patterns/buried.png");
+	}
+
 	&-card {
 		border: 1px solid $border-color;
 		border-radius: $border-radius;
@@ -38,7 +43,7 @@
 			&-body {
 				background-color: $white;
 				color: initial;
-				padding: 1rem;
+				// padding: 1rem;
 
 				hr {
 					background-color: $border-color;
@@ -178,6 +183,30 @@
 	.accordion {
 		&-header {
 			font-size: 1.225em;
+		}
+	}
+}
+
+// Mobiles/Tablets
+@media (max-width: 767px) {
+	.accordion {
+		&-media {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+
+		&-item {
+			padding-bottom: 50px;
+			position: relative;
+		}
+
+		&-toggle {
+			bottom: 0;
+			left: 0;
+			padding: 1rem !important;
+			position: absolute;
+			right: 0;
 		}
 	}
 }

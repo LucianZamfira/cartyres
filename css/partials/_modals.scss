@@ -270,6 +270,10 @@
 			right: -6px;
 			top: -6px;
 			z-index: 100;
+
+			&:hover {
+				background-color: $white;
+			}
 		}
 	}
 }
