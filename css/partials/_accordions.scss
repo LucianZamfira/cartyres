@@ -22,8 +22,9 @@
 	&-media {
 		// background-image: url("../images/asfalt-light.png");
 		background-image: url("https://www.transparenttextures.com/patterns/buried.png");
-		display: flex;
 		align-items: center;
+		border-radius: $border-radius;
+		display: flex;
 		justify-content: center;
 		padding: 0 1.4rem;
 	}
