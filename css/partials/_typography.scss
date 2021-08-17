@@ -246,17 +246,17 @@ blockquote {
 		color: $error-color;
 	}
 
-	&-strong {
-		font-weight: 600;
-	}
+	// &-strong {
+	// 	font-weight: 600;
+	// }
 
-	&-bold {
-		font-weight: 900;
-	}
+	// &-bold {
+	// 	font-weight: 700;
+	// }
 
-	&-thin {
-		font-weight: 300;
-	}
+	// &-thin {
+	// 	font-weight: 300;
+	// }
 
 	&-underline {
 		text-decoration: underline;
@@ -280,6 +280,24 @@ blockquote {
 
 	&-emphasis {
 		font-size: 3.125em;
+	}
+}
+
+.font {
+	&-light {
+		font-weight: 300;
+	}
+
+	&-regular {
+		font-weight: 400;
+	}
+
+	&-strong {
+		font-weight: 600;
+	}
+
+	&-bold {
+		font-weight: 700;
 	}
 }
 
