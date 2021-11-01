@@ -132,4 +132,9 @@ a {
 			text-decoration: none;
 		}
 	}
+
+	&--flex {
+		align-items: center;
+		display: inline-flex;
+	}
 }

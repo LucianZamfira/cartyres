@@ -17,6 +17,11 @@
 		background-color: $primary-color;
 		color: $white;
 	}
+
+	&.medium {
+		padding: 0.4rem 0.8rem;
+		font-size: 0.9em;
+	}
 }
 
 .badge {

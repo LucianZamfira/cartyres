@@ -19,6 +19,75 @@
 } */
 
 .accordion {
+	&-light {
+		.accordion {
+			&-item {
+				border-radius: $button-border-radius;
+				border: 2px solid $border-color;
+				transition: all 0.2s ease-in-out;
+
+				&.active {
+					border-color: $primary-color;
+				}
+
+				&:hover {
+					border-color: $primary-color;
+				}
+			}
+
+			&-button {
+				border-radius: unset;
+				border: medium none;
+
+				&:hover {
+					background-color: $white;
+					color: $primary-text-color;
+				}
+			}
+		}
+	}
+
+	&-flush {
+		.accordion {
+			&-body {
+				background-color: $primary-color;
+				border-radius: 0 0 $border-radius $border-radius;
+				color: $white;
+			}
+
+			&-button {
+				border-color: $border-color;
+
+				&:not(.collapsed) {
+					background-color: $primary-color;
+					border-bottom-left-radius: unset;
+					border-bottom-right-radius: unset;
+					border-color: $primary-color;
+					color: $white;
+
+					&:after {
+						content: "\e908";
+					}
+
+					&:hover {
+						background-color: $primary-color;
+						color: $white;
+					}
+				}
+
+				&:hover {
+					background-color: $primary-color;
+					color: $white;
+					z-index: 2;
+				}
+			}
+
+			&-collapse {
+				transform: translateY(-0.8rem);
+			}
+		}
+	}
+
 	&-media {
 		// background-image: url("../images/asfalt-light.png");
 		background-image: url("https://www.transparenttextures.com/patterns/buried.png");
@@ -61,14 +130,7 @@
 		}
 	}
 
-	&-collapse {
-		transform: translateY(-0.8rem);
-	}
-
 	&-body {
-		background-color: $primary-color;
-		border-radius: 0 0 $border-radius $border-radius;
-		color: $white;
 		padding: 1rem 1.5rem 1.5rem 1.5rem;
 
 		hr {
@@ -80,7 +142,7 @@
 	&-button {
 		align-items: center;
 		background-color: $white;
-		border-color: $border-color;
+		// border-color: $border-color;
 		color: $primary-text-color;
 		display: flex;
 		padding: 0.8rem 1.2rem;
@@ -90,22 +152,22 @@
 		width: 100%;
 		z-index: 5;
 
-		&:not(.collapsed) {
-			background-color: $primary-color;
-			border-bottom-left-radius: unset;
-			border-bottom-right-radius: unset;
-			border-color: $primary-color;
-			color: $white;
+		// &:not(.collapsed) {
+		// 	background-color: $primary-color;
+		// 	border-bottom-left-radius: unset;
+		// 	border-bottom-right-radius: unset;
+		// 	border-color: $primary-color;
+		// 	color: $white;
 
-			&:after {
-				content: "\e908";
-			}
+		// 	&:after {
+		// 		content: "\e908";
+		// 	}
 
-			&:hover {
-				background-color: $primary-color;
-				color: $white;
-			}
-		}
+		// 	&:hover {
+		// 		background-color: $primary-color;
+		// 		color: $white;
+		// 	}
+		// }
 
 		&:after {
 			content: "\e905";
@@ -115,8 +177,6 @@
 		}
 
 		&:hover {
-			background-color: $primary-color;
-			color: $white;
 			z-index: 2;
 		}
 

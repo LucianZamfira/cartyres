@@ -13,6 +13,21 @@ section {
 }
 
 .section {
+	&--toolbar {
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		color: darken($gray, 8%);
+		display: flex;
+		font-size: 1.2em;
+		justify-content: space-between;
+		margin-bottom: 2rem;
+
+		.breadcrumbs {
+			font-family: $site-font-family;
+			color: inherit;
+		}
+	}
+
 	&--aside {
 		padding: 0 !important;
 	}

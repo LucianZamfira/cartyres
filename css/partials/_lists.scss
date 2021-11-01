@@ -88,6 +88,42 @@ ol {
 }
 
 .list {
+	&--table {
+		// display: flex;
+		align-items: stretch;
+		display: grid;
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		justify-items: stretch;
+		position: relative;
+
+		> li {
+			margin: 0;
+			border-right: 1px solid $border-color;
+			border-bottom: 1px solid $border-color;
+			text-align: center;
+
+			img {
+				display: inline-block;
+			}
+
+			&:nth-child(4n) {
+				border-right: none;
+			}
+		}
+
+		&:after {
+			background-color: $white;
+			content: " ";
+			height: 1px;
+			position: absolute;
+			top: 100%;
+			transform: translateY(-1px);
+			width: 100%;
+		}
+	}
+
 	&--block {
 		flex-direction: column;
 	}
@@ -185,6 +221,8 @@ ol {
 		font-size: 1.225em;
 
 		> li {
+			align-items: center;
+			display: inline-flex;
 			margin: 0;
 
 			+ li {

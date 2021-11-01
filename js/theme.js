@@ -181,4 +181,17 @@ $(document).ready(function () {
 			$(this).attr('aria-label', 'slid-' + index);
 		});
 	}
+
+	// Accordion events
+	let lightAccordion = document.querySelector('.accordion-light');
+
+	$('.accordion-item').on('click', function () {
+		$(this).parent().find('.accordion-item').removeClass('active');
+	});
+
+	if (lightAccordion !== null) {
+		lightAccordion.addEventListener('shown.bs.collapse', function (event) {
+			event.target.parentNode.classList.add('active');
+		});
+	}
 });

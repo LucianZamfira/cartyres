@@ -149,7 +149,7 @@
 							<div class="input-flex">
 								<div class="col-6 col-md-12">
 									<div class="input-wrapper">
-										<input id="crn" name="crn" type="text" class="input--inverted" placeholder="Car registration number" />
+										<input id="crn" name="crn" type="text" class="input--inverted" placeholder="Car registration number" required />
 									</div>
 								</div>
 
@@ -162,20 +162,21 @@
 
 							<div class="input-row">
 								<label class="custom-type mb-2">
-									<input name="GDPR" type="checkbox" value="GDPR" />
+									<input name="GDPR" type="checkbox" value="GDPR" required />
 									<span class="checkmark"></span>
 									<span class="custom-type__label ml-1">The General Data Protection Regulation 2016/679 is a regulation in EU law on data protection and privacy in the European Union.</span>
 								</label>
 
 								<label class="custom-type">
-									<input name="newsletter" type="checkbox" value="newsletter" />
+									<input name="newsletter" type="checkbox" value="newsletter" required />
 									<span class="checkmark"></span>
 									<span class="custom-type__label ml-1">Newsletters, offers and discounts</span>
 								</label>
 							</div>
 
 							<div class="input-actions text-right">
-								<a href="results.html" title="Start comparing" class="button--white">Start comparing</a>
+								<!-- <a href="results.html" title="Start comparing" class="button--white">Start comparing</a> -->
+								<button type="submit" class="button--white">Start comparing</button>
 							</div>
 						</form>
 					</div>
