@@ -128,6 +128,30 @@ button,
 		}
 	}
 
+	&--green {
+		background-color: rgba(#55ff22, 0.12);
+		border-color: rgba(#55ff22, 0.12);
+		color: #12ba25;
+
+		&:hover {
+			background-color: #12ba25;
+			border-color: #12ba25;
+			color: $white;
+		}
+	}
+
+	&--yellow {
+		background-color: #f4e2a9;
+		border-color: #f4e2a9;
+		color: #646464;
+
+		&:hover {
+			background-color: #ffce31;
+			border-color: #ffce31;
+			color: $white;
+		}
+	}
+
 	&--favorite {
 		border-radius: unset;
 		border: medium none;

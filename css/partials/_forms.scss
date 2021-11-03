@@ -284,101 +284,20 @@ label,
 	}
 }
 
-/* .custom-type {
-	align-items: center;
-	display: inline-flex;
-	margin-bottom: 0;
-	position: relative;
-	text-align: left;
-
-	&:last-child {
-		margin-right: 0;
-	}
-
-	.checkmark {
-		border: 2px solid $input-border-color;
-		display: block;
-		flex-shrink: 0;
-		height: 18px;
-		margin-right: 0.5rem;
-		position: relative;
-		width: 18px;
-
-		&:after {
-			color: transparent;
-			content: " ";
-			font-family: "icomoon";
-			font-size: 10px;
-			font-weight: initial;
-			left: 0;
-			line-height: normal;
-			position: absolute;
-			text-align: center;
-			top: 0;
-			transition: all 0.18s ease-in-out;
-		}
-	}
-
-	.checkmark,
-	&__label {
-		color: $primary-text-color;
-		cursor: pointer;
-	}
-
-	[type="radio"] {
-		& + .checkmark {
-			border-radius: 50%;
-
-			&:after {
-				border-radius: 50%;
-				height: 10px;
-				margin-left: 2px;
-				margin-top: 2px;
-				width: 10px;
-			}
-		}
-
-		&:checked + .checkmark {
-			&:after {
-				background-color: $primary-color;
-			}
-		}
-	}
-
-	[type="checkbox"] {
-		& + .checkmark {
-			&:after {
-				height: 10px;
-				margin-left: 2px;
-				margin-top: 2px;
-				width: 10px;
-			}
-		}
-
-		&:checked + .checkmark {
-			&:after {
-				background-color: $primary-color;
-			}
-		}
-	}
-
-	input {
-		left: 0;
-		margin: 0;
-		padding: 0;
-		pointer-events: none;
-		position: absolute;
-		top: 0;
-		visibility: hidden;
-		width: auto;
-	}
-} */
-
 .custom-type {
 	display: inline-flex;
 	margin-bottom: 0;
 	position: relative;
 	text-align: left;
+
+	&.fluid {
+		width: 100%;
+
+		[class^="badge"] {
+			justify-content: center;
+			width: 100%;
+		}
+	}
 
 	&:last-child {
 		margin-right: 0;
@@ -417,12 +336,25 @@ label,
 	}
 
 	input {
-		&:checked + .checkmark {
-			background-color: $primary-color;
-			border-color: $primary-color;
+		&:checked {
+			+ .checkmark {
+				background-color: $primary-color;
+				border-color: $primary-color;
 
-			&:after {
-				opacity: 1;
+				&:after {
+					opacity: 1;
+				}
+			}
+
+			+ .badge--gray {
+				background-color: $primary-color;
+				border-color: $primary-color;
+				color: $white;
+			}
+
+			+ .badge--yellow {
+				background-color: #ffce31;
+				border-color: #ffce31;
 			}
 		}
 	}

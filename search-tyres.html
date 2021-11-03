@@ -13,7 +13,7 @@
 		<meta property="og:url" content="https://www.cartyres.com" />
 		<meta property="og:site_name" content="Cartyres.com" />
 
-		<title>Cartyres.com - Tyre Manufacturers</title>
+		<title>Cartyres.com - Tyre Retailers</title>
 
 		<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
 		<link rel="stylesheet" href="css/main.min.css" />
@@ -57,19 +57,17 @@
 							<li><a href="about-us.html" title="About us" class="link">About us</a></li>
 							<li><a href="blog.html" title="Blog" class="link">Blog</a></li>
 							<li><a href="#" title="Show successful toast" class="link show-toast">Show successful toast</a></li>
-							<li><a href="#" title="Open modal" class="link" data-bs-toggle="modal" data-bs-target="#defaultModal">Open modal</a></li>
+							<li><a href="#" title="Open modal" class="link" data-bs-toggle="modal" data-bs-target="#searchModal">Open modal</a></li>
 							<li><a href="#" title="Tyre Manufacturers" class="link">Tyre Manufacturers</a></li>
-							<li><a href="search-results.html" title="Search Results" class="link">Search Results</a></li>
-							<li><a href="search-tyres.html" title="Search Tyres" class="link">Search Tyres</a></li>
 						</ul>
 					</li>
 
 					<li>
-						<a href="tyre-retailers.html" title="Tyre Retailers" class="trigger">Tyre Retailers</a>
+						<a href="tyre-retailers.html" title="Tyre Retailers" class="trigger active">Tyre Retailers</a>
 					</li>
 
 					<li>
-						<a href="tyre-manufacturers.html" title="Tyre Manufacturers" class="trigger active">Tyre Manufacturers</a>
+						<a href="tyre-manufacturers.html" title="Tyre Manufacturers" class="trigger">Tyre Manufacturers</a>
 					</li>
 
 					<li>
@@ -144,7 +142,7 @@
 			<!-- Section start -->
 			<section class="section--top">
 				<div class="container">
-					<h1>Tyre Manufactures</h1>
+					<h1 class="mb-4">Search tyres</h1>
 				</div>
 
 				<picture class="picture">
@@ -178,110 +176,152 @@
 							<a href="#" title="logo-10" class="link"><img src="images/partners/logo-10.png" alt="logo-10" class="image--fluid" width="130" height="50" /></a>
 						</div>
 					</div>
+
+					<div class="content--regular mb-5">
+						<h2 class="my-4 text-black text-uppercase">We’ve found <span class="text-primary">8 retailers</span> with 179 tyres ranging from <span class="text-primary">£131.99-£219.99</span></h2>
+
+						<div class="card--partners mb-4">
+							<h3 class="text-black font-regular my-1">Please Select The Tyre Brands That Interest You.</h3>
+
+							<ul class="list--badges my-2">
+								<li>
+									<label class="custom-type">
+										<input name="brands[]" type="checkbox" value="Bridgestone" />
+										<span class="badge--gray">Bridgestone</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="custom-type">
+										<input name="brands[]" type="checkbox" value="Continental" />
+										<span class="badge--gray">Continental</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="custom-type">
+										<input name="brands[]" type="checkbox" value="Falken" />
+										<span class="badge--gray">Falken</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="custom-type">
+										<input name="brands[]" type="checkbox" value="Goodyear" />
+										<span class="badge--gray">Goodyear</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="custom-type">
+										<input name="brands[]" type="checkbox" value="Hankook" />
+										<span class="badge--gray">Hankook</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="custom-type">
+										<input name="brands[]" type="checkbox" value="Michelin" />
+										<span class="badge--gray">Michelin</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="custom-type">
+										<input name="brands[]" type="checkbox" value="Yokohama" />
+										<span class="badge--gray">Yokohama</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="custom-type">
+										<input name="brands[]" type="checkbox" value="Pirelli" />
+										<span class="badge--gray">Pirelli</span>
+									</label>
+								</li>
+							</ul>
+
+							<div class="row my-3">
+								<div class="col-6">
+									<ul class="list--flex gap-1">
+										<li class="m-0">
+											<label class="custom-type fluid">
+												<input name="brands[]" type="checkbox" value="Caravan" />
+												<span class="badge--gray large">Caravan</span>
+											</label>
+										</li>
+
+										<li class="m-0">
+											<label class="custom-type fluid">
+												<input name="brands[]" type="checkbox" value="Budget Brands" />
+												<span class="badge--yellow large">Budget Brands</span>
+											</label>
+										</li>
+									</ul>
+								</div>
+
+								<div class="col-6">
+									<button class="button--green button--full">Select all</button>
+								</div>
+							</div>
+
+							<hr class="separator" />
+
+							<h3 class="text-black font-regular my-1">Please select any fitment you require</h3>
+
+							<ul class="list--badges my-2">
+								<li>
+									<label class="custom-type">
+										<input name="fitment[]" type="checkbox" value="Run flat tyres" />
+										<span class="badge--gray">Run flat tyres</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="custom-type">
+										<input name="fitment[]" type="checkbox" value="Winter tyres" />
+										<span class="badge--gray">Winter tyres</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="custom-type">
+										<input name="fitment[]" type="checkbox" value="All Season Tyres" />
+										<span class="badge--gray">All Season Tyres</span>
+									</label>
+								</li>
+							</ul>
+
+							<div class="row offset-bottom justify-content-end">
+								<div class="col-6">
+									<button class="button--secondary button--full background--white">Show my tyre prices</button>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 			<!-- Section end -->
 
 			<!-- Section start -->
-			<section>
-				<div class="container--medium">
-					<h2 class="headline">First Title</h2>
+			<section class="section--testimonial">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-5 col-sm-12">
+							<h2 class="headline">One Search for Every Tyre, Every Town and Every Price</h2>
 
-					<p>Here at TyreSpy we bring you the lowest priced car tyres available and yes, our prices include the fitting, old tyre disposal, replacement valves, wheel balancing and VAT. We make sure that we are the cheapest online all day, every day, because we monitor all online and off-line tyre prices in the UK every day, so you can save that little bit extra on your motoring costs.</p>
-
-					<p>Aenean pretium vel dui vitae rhoncus. Vivamus non aliquet justo. Vivamus nec arcu eu nisi semper porta a euismod mi. Vivamus ut consectetur ipsum, eget scelerisque augue. Sed mollis pretium tellus, sed ultricies metus facilisis eu. Ut bibendum mattis posuere. Praesent convallis urna sed turpis vulputate, ac imperdiet nisi luctus.</p>
-
-					<div class="accordion accordion-light mb-3" id="accordionSavingsBy">
-						<div class="accordion-item active">
-							<h2 class="accordion-header" id="headingOne">
-								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Tyre Savings By Car Manufacturer</button>
-							</h2>
-
-							<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionSavingsBy">
-								<div class="accordion-body">
-									<ul class="list--table">
-										<li class="p-2">
-											<img src="images/partners/logo-01.png" alt="logo-01" class="image--fluid" width="150" />
-										</li>
-										<li class="p-2">
-											<img src="images/partners/logo-02.png" alt="logo-02" class="image--fluid" width="150" />
-										</li>
-										<li class="p-2">
-											<img src="images/partners/logo-03.png" alt="logo-03" class="image--fluid" width="150" />
-										</li>
-										<li class="p-2">
-											<img src="images/partners/logo-04.png" alt="logo-04" class="image--fluid" width="150" />
-										</li>
-										<li class="p-2">
-											<img src="images/partners/logo-05.png" alt="logo-05" class="image--fluid" width="150" />
-										</li>
-										<li class="p-2">
-											<img src="images/partners/logo-06.png" alt="logo-06" class="image--fluid" width="150" />
-										</li>
-										<li class="p-2">
-											<img src="images/partners/logo-07.png" alt="logo-07" class="image--fluid" width="150" />
-										</li>
-										<li class="p-2">
-											<img src="images/partners/logo-08.png" alt="logo-08" class="image--fluid" width="150" />
-										</li>
-										<li class="p-2">
-											<img src="images/partners/logo-09.png" alt="logo-09" class="image--fluid" width="150" />
-										</li>
-										<li class="p-2">
-											<img src="images/partners/logo-10.png" alt="logo-10" class="image--fluid" width="150" />
-										</li>
-									</ul>
-								</div>
-							</div>
+							<ul class="list list--icons">
+								<li><i class="icon-check"></i> Our online comparison is free and easy to use.</li>
+								<li><i class="icon-check"></i> We remember your details to make it even easier to get a quote.</li>
+								<li><i class="icon-check"></i> Our website is secure and we are regulated by the Financial Conduct Authority.</li>
+							</ul>
 						</div>
 
-						<div class="accordion-item">
-							<h2 class="accordion-header" id="headingTwo">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Tyre Savings By Tyre Brand</button>
-							</h2>
-
-							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionSavingsBy">
-								<div class="accordion-body">
-									<ul class="list--table">
-										<li class="p-2">
-											<img src="images/partners/logo-01.png" alt="logo-01" class="image--fluid" width="150" />
-										</li>
-										<li class="p-2">
-											<img src="images/partners/logo-02.png" alt="logo-02" class="image--fluid" width="150" />
-										</li>
-										<li class="p-2">
-											<img src="images/partners/logo-03.png" alt="logo-03" class="image--fluid" width="150" />
-										</li>
-										<li class="p-2">
-											<img src="images/partners/logo-04.png" alt="logo-04" class="image--fluid" width="150" />
-										</li>
-										<li class="p-2">
-											<img src="images/partners/logo-05.png" alt="logo-05" class="image--fluid" width="150" />
-										</li>
-										<li class="p-2">
-											<img src="images/partners/logo-06.png" alt="logo-06" class="image--fluid" width="150" />
-										</li>
-										<li class="p-2">
-											<img src="images/partners/logo-07.png" alt="logo-07" class="image--fluid" width="150" />
-										</li>
-										<li class="p-2">
-											<img src="images/partners/logo-08.png" alt="logo-08" class="image--fluid" width="150" />
-										</li>
-										<li class="p-2">
-											<img src="images/partners/logo-09.png" alt="logo-09" class="image--fluid" width="150" />
-										</li>
-										<li class="p-2">
-											<img src="images/partners/logo-10.png" alt="logo-10" class="image--fluid" width="150" />
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
+						<aside class="col-6 col-sm-12">
+							<p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec purus tellus, finibus in lorem tristique, maximus eleifend felis. Cras porttitor ante non lectus consequat vulputate. Vestibulum ac tortor in odio</p>
+							<span class="client">Cartyres.com</span>
+						</aside>
 					</div>
-
-					<h3>Second Title</h3>
-
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis cursus sapien, a scelerisque odio condimentum in. Vivamus vel quam convallis felis vehicula tincidunt non eu ex. Quisque commodo nisl sed sapien tincidunt rutrum. Sed efficitur, neque nec sollicitudin efficitur, tellus sapien posuere sapien, vitae fringilla lectus nibh ut orci. Proin nec turpis pharetra, venenatis dolor a, suscipit lectus. Sed auctor eu mauris vitae lobortis. Integer hendrerit eros vitae finibus cursus. Sed maximus efficitur arcu sit amet ultricies. Morbi at nibh lobortis, mollis nulla gravida, placerat orci. Curabitur tincidunt, nibh quis consequat congue, arcu eros fringilla quam, non lacinia lorem massa sit amet nulla. Aliquam erat volutpat. Phasellus lobortis in risus ut faucibus.</p>
 				</div>
 			</section>
 			<!-- Section end -->

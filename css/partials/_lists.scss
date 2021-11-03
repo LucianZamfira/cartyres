@@ -38,6 +38,24 @@ ol {
 		}
 	}
 
+	&.gap {
+		&-1 {
+			> li {
+				+ li {
+					margin-left: 1rem;
+				}
+			}
+		}
+
+		&-2 {
+			> li {
+				+ li {
+					margin-left: 2rem;
+				}
+			}
+		}
+	}
+
 	> li {
 		&.error,
 		&.success,
