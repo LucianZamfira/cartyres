@@ -153,6 +153,22 @@ button,
 		}
 	}
 
+	&--all {
+		.secondary {
+			display: none;
+		}
+
+		&.toggled {
+			.primary {
+				display: none;
+			}
+
+			.secondary {
+				display: inline-flex;
+			}
+		}
+	}
+
 	&--favorite {
 		border-radius: unset;
 		border: medium none;

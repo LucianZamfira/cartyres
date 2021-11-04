@@ -194,4 +194,10 @@ $(document).ready(function () {
 			event.target.parentNode.classList.add('active');
 		});
 	}
+
+	// Select all functionality
+	$('.button--all').on('click', function () {
+		$(this).toggleClass('toggled');
+		$(this).parents('ul').find('input').click();
+	});
 });
