@@ -198,10 +198,8 @@ $(document).ready(function () {
 	// Select all functionality
 	$('.button--all').on('click', function () {
 		if ($(this).hasClass('toggled')) {
-			console.log('unckeck inputs');
 			$(this).parents('ul').find('input').prop('checked', false);
 		} else {
-			console.log('check inputs');
 			$(this).parents('ul').find('input').prop('checked', true);
 		}
 
