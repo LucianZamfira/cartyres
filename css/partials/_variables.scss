@@ -106,7 +106,7 @@ $button-line-height: 1.2; //@at-root
 // Cards
 $card-padding: 1.6rem; //@at-root
 $card-border-radius: 22px; //@at-root
-$card-border-color: $sky; //@at-root
+$card-border-color: $border-color; //@at-root
 
 // Primary Button
 $primary-button-color: $primary-color; //@at-root
@@ -169,7 +169,7 @@ $badge-success-color: #269c36;
 $badge-green-color: #269c36;
 $badge-warning-color: #ff7707;
 $badge-orange-color: #fe9000;
-$badge-yellow-color: #f4e2a9;
+$badge-yellow-color: #ffc107;
 $badge-info-color: #0d7dc0;
 $badge-light-color: #f5f5f5;
 $badge-dark-color: #1b1b1b;

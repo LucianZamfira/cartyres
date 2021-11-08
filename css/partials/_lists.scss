@@ -258,8 +258,27 @@ ol {
 	&--sizes {
 		display: flex;
 		flex-flow: row wrap;
+		justify-content: space-between;
 		width: 100%;
 		font-size: 1.225em;
+
+		.flex-1 {
+			align-items: center;
+			display: inline-flex;
+			flex-direction: column;
+			// flex: 1;
+			padding: 0.2rem 0;
+			text-align: center;
+
+			+ li {
+				margin-left: auto;
+			}
+		}
+
+		span {
+			min-width: 80px;
+			max-width: 80px;
+		}
 
 		> li {
 			align-items: center;
@@ -274,11 +293,18 @@ ol {
 
 	&--options {
 		display: flex;
-		flex-flow: row wrap;
+		// flex-flow: row wrap;
+		justify-content: space-between;
 		width: 100%;
 
 		p {
 			margin: 0 0 0 1rem;
+		}
+
+		span {
+			margin-top: 0.5rem;
+			min-width: 80px;
+			max-width: 80px;
 		}
 
 		> li {
@@ -287,6 +313,15 @@ ol {
 			flex-direction: row;
 			margin: 0;
 			padding: 0.5rem;
+		}
+
+		.flex-1 {
+			align-items: center;
+			display: inline-flex;
+			flex-direction: column;
+			// flex: 1;
+			padding: 0.2rem 0;
+			text-align: center;
 		}
 	}
 

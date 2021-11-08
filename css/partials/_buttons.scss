@@ -77,6 +77,16 @@ button,
 		}
 	}
 
+	&--smaller {
+		font-size: 0.82em;
+		padding: 0.4rem 0.8rem;
+		min-width: auto;
+
+		i {
+			font-size: 1.45em;
+		}
+	}
+
 	&--regular {
 		font-size: 1.25em;
 		min-width: 200px;

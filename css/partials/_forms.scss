@@ -243,9 +243,10 @@ select {
 	}
 
 	&:after {
-		background-color: $cream;
+		// background-color: $cream;
 		content: " ";
 		height: 1px;
+		border: 1px solid $cream;
 		left: 0;
 		position: absolute;
 		right: 0;

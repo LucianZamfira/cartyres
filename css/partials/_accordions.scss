@@ -119,9 +119,9 @@
 				color: initial;
 				// padding: 1rem;
 
-				hr {
-					background-color: $border-color;
-				}
+				// hr {
+				// 	background-color: $border-color;
+				// }
 			}
 
 			&-collapse {
@@ -134,7 +134,7 @@
 		padding: 1rem 1.5rem 1.5rem 1.5rem;
 
 		hr {
-			background-color: rgba($white, 0.5);
+			// background-color: rgba($white, 0.5);
 			margin: 0 0 1rem 0;
 		}
 	}
@@ -188,6 +188,10 @@
 	&-header {
 		margin-bottom: 0;
 		font-size: 1.125em;
+	}
+
+	&-toggle {
+		cursor: pointer;
 	}
 
 	&-item {
