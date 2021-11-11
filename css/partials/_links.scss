@@ -16,7 +16,8 @@ a {
 	}
 }
 
-.link {
+.link,
+[class*="link--"] {
 	color: inherit;
 	line-height: 1.3;
 	text-decoration: none;
@@ -36,6 +37,17 @@ a {
 
 		&:before {
 			display: block;
+		}
+	}
+}
+
+.link {
+	&--primary {
+		color: $primary-color;
+
+		&.emphasis {
+			font-size: 1.125em;
+			font-weight: 400;
 		}
 	}
 
